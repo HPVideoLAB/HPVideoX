@@ -91,6 +91,51 @@
         }
       }
 
+      watch(() => locale.value, () => {
+        qs_cont.value = [
+          {
+            title: t("faqs.qs1.title"),
+            text: t("faqs.qs1.text")
+          },
+          {
+            title: t("faqs.qs2.title"),
+            text: t("faqs.qs2.text")
+          },
+          {
+            title: t("faqs.qs3.title"),
+            text: t("faqs.qs3.text")
+          },
+          {
+            title: t("faqs.qs4.title"),
+            text: t("faqs.qs4.text")
+          },
+          {
+            title: t("faqs.qs5.title"),
+            text: t("faqs.qs5.text")
+          },
+          {
+            title: t("faqs.qs6.title"),
+            text: t("faqs.qs6.text")
+          },
+          {
+            title: t("faqs.qs7.title"),
+            text: t("faqs.qs7.text")
+          },
+          {
+            title: t("faqs.qs8.title"),
+            text: t("faqs.qs8.text")
+          },
+          {
+            title: t("faqs.qs9.title"),
+            text: t("faqs.qs9.text")
+          },
+          {
+            title: t("faqs.qs10.title"),
+            text: t("faqs.qs10.text")
+          }
+        ]
+      })
+
       const linkHref = (el) => {
         window.open(`https://www.hpvideo.io/`, '_blank')
       }
