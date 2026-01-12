@@ -5,14 +5,14 @@
         <div class="bg1"></div>
         <div class="cont1">
           <div class="home_left">
-            <div class="title animation_hide" v-animate="{delay: 0, class:'fadeInUp'}">
+            <h1 class="title animation_hide" v-animate="{delay: 0, class:'fadeInUp'}">
               <p class="title1">{{ $t("home.cont1.title1") }}</p>
               <p>{{ $t("home.cont1.title2") }}</p>
               <!-- <p>{{ $t("home.cont1.title3") }}</p> -->
-            </div>
-            <div class="text animation_hide delay200" v-animate="{delay: 200, class:'fadeInUp'}">
+            </h1>
+            <h3 class="text animation_hide delay200" v-animate="{delay: 200, class:'fadeInUp'}">
               <p>{{ $t("home.cont1.title3") }}</p>
-            </div>
+            </h3>
             <!-- <div class="text animation_hide delay200" v-animate="{delay: 200, class:'fadeInUp'}">
               
             </div> -->
@@ -64,7 +64,7 @@
     </header>
     <article>
       <div class="content help_with">
-        <div class="title animation_hide" v-animate="{delay: 0, class:'fadeInUp'}">{{ $t("home.cont2.title") }}</div>
+        <h2 class="title animation_hide" v-animate="{delay: 0, class:'fadeInUp'}">{{ $t("home.cont2.title") }}</h2>
         <div class="ask_cont animation_hide delay300" v-animate="{delay: 300, class:'fadeInUp'}">
           <div class="ask_text_cont">
             <textarea 
@@ -123,7 +123,7 @@
       </div>
     </div>
     <div class="content support_model">
-      <div class="title">{{ $t("home.model.title") }}</div>
+      <h2 class="title">{{ $t("home.model.title") }}</h2>
       <div class="models_list">
         <div class="models_li animation_hide" :class="`delay${index}00`" v-animate="{delay: (index+1)*100, class:'fadeInUp'}" v-for="(item, index) in models_data" :key="index">
           <div class="top_title">
@@ -138,10 +138,10 @@
       </div>
     </div>
     <div class="content text_video">
-      <div class="title">{{ $t("home.cont4.title") }}</div>
+      <h2 class="title">{{ $t("home.cont4.title") }}</h2>
       <div class="video-container" :class="containerClass">
         <div class="placeholder" :class="placeholderClass">
-          <img src="../assets/video_img.png" class="placeholder-image">
+          <img src="../assets/video_img.png" alt="Introduction to AI Text Generation Video" class="placeholder-image">
           <div class="play-button" @click="playVideo"></div>
         </div>
         <video 
@@ -161,7 +161,7 @@
       </div>
     </div>
     <div class="content use_cases animation_hide delay100" v-animate="{delay: 100, class:'fadeInUp'}">
-      <div class="title">{{ $t("home.cont5.title") }}</div>
+      <h2 class="title">{{ $t("home.cont5.title") }}</h2>
       <div class="case_list">
         <div class="text" :class="{'active': choose_case == index}" v-for="(item, index) in case_data" :key="index" @click="ChooseCase(index)">{{ item.text }}</div>
       </div>
@@ -182,7 +182,7 @@
       </div>
     </div>
     <div class="content speed_cost">
-      <div class="title">{{ $t("home.cont6.title") }}</div>
+      <h2 class="title">{{ $t("home.cont6.title") }}</h2>
       <div class="speedcost_cont">
         <!-- <div class="cont_left animation_hide delay100" v-animate="{delay: 100, class:'fadeInLeft'}"><img src="../assets/cont6_img1.png" alt=""></div> -->
         <div class="cont_left">
@@ -277,7 +277,7 @@
       </div>
     </div> -->
     <div class="content blog_cont">
-      <div class="title">{{ $t("home.cont8.title") }}</div>
+      <h2 class="title">{{ $t("home.cont8.title") }}</h2>
       <div v-if="items.length > 0" class="slider-container" @mousedown="startDrag" @touchstart="startDrag">
         <div 
             class="slider-wrapper" 
@@ -330,6 +330,7 @@
   import video7 from "@/assets/video/case_video7.png"
   import video9 from "@/assets/video/case_video9.png"
   import { getList, getCategories } from "@/api/index";
+  import { useHead } from '@unhead/vue'
   export default defineComponent({
     name: 'Home',
     components: {},
@@ -1182,6 +1183,16 @@
         ]
       })
 
+      const SetHead = () => {
+        useHead({
+            link: [
+              {
+                rel: 'canonical',
+                href: window.location.href
+              }
+            ]
+          })
+      }
       
       
       onMounted(async () => {
@@ -1313,7 +1324,7 @@
         width: 90%;
         display: flex;
         margin: 0 auto;
-        max-width: 1200px;
+        max-width: 1440px;
         align-items: center;
         .home_left {
           flex: 1;

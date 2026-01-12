@@ -135,7 +135,8 @@
   backdrop-filter: blur(6px);
   .content {
     margin: auto;
-    width: 1200px;
+    width: 1440px;
+    min-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
