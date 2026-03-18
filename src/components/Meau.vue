@@ -8,6 +8,7 @@
       </div>
       <div class="meau" v-else>
         <div class="meau_li" :class="{'active': route.path == '/models'}" @click="linkHref('/models')">{{ $t("meau.nav1") }}</div>
+        <div class="meau_li" :class="{'active': route.path == '/x402-skills'}" @click="linkHref('/x402-skills')">{{ $t("meau.nav10") }}</div>
         <div class="meau_li" :class="{'active': route.path == '/miners'}" @click="linkHref('/miners')">{{ $t("meau.nav2") }}</div>
         <!-- <div class="meau_li" :class="{'active': route.path == '/learn'}" @click="linkHref('/learn')">{{ $t("meau.nav3") }}</div> -->
         <div class="meau_li" @click="linkHref('/creator')">{{ $t("meau.nav4") }}</div>
@@ -93,6 +94,8 @@
       const linkHref = (el) => {
         if (el == "/creator") {
           window.open('https://www.hpvideo.io/creator/', '_blank')
+        } else if (el == "/x402-skills") {
+          window.open('https://www.hpvideo.io/creator/x402-skills', '_blank')
         } else {
           router.push({ path: el })
           localStorage.setItem('path', el)

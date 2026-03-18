@@ -8,7 +8,8 @@ export default {
     nav6: "学院",
     nav7: "帮助中心",
     nav8: "HPVideo 的使用方式",
-    nav9: "前往 HPVideo"
+    nav9: "前往 HPVideo",
+    nav10: "x402 Skills"
   },
   home: {
     cont1: {
