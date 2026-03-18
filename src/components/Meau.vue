@@ -95,7 +95,7 @@
         if (el == "/creator") {
           window.open('https://www.hpvideo.io/creator/', '_blank')
         } else if (el == "/x402-skills") {
-          window.open('https://www.hpvideo.io/creator/x402-skills', '_blank')
+          window.open('https://www.hpvideo.io/x402-skills/', '_blank')
         } else {
           router.push({ path: el })
           localStorage.setItem('path', el)
