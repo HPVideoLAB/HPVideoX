@@ -2,6 +2,18 @@ const { defineConfig } = require('@vue/cli-service')
 
 const isProd = process.env.NODE_ENV === 'production'
 
+// Optional: lossless image compression at build time.
+// Enabled only when `image-minimizer-webpack-plugin` is installed locally.
+// Skipping gracefully means production builds still work even if the
+// native image tooling (sharp/mozjpeg/pngquant) isn't available on the
+// build host.
+let ImageMinimizerPlugin = null
+try {
+  ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
+} catch (_) {
+  /* plugin not installed; skip */
+}
+
 module.exports = defineConfig({
   publicPath: '/',
   transpileDependencies: true,
@@ -22,6 +34,27 @@ module.exports = defineConfig({
         }
         return args
       })
+    }
+  },
+
+  configureWebpack: (config) => {
+    if (isProd && ImageMinimizerPlugin) {
+      config.optimization = config.optimization || {}
+      config.optimization.minimizer = config.optimization.minimizer || []
+      config.optimization.minimizer.push(
+        new ImageMinimizerPlugin({
+          minimizer: {
+            implementation: ImageMinimizerPlugin.sharpMinify,
+            options: {
+              encodeOptions: {
+                jpeg: { quality: 80 },
+                png: { compressionLevel: 9, palette: true },
+                webp: { quality: 80 },
+              },
+            },
+          },
+        })
+      )
     }
   },
 })
