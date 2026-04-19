@@ -11,7 +11,7 @@
     <div class="page_cont">
       <div class="page_text text"><p class="page_title1">{{ blogData.category }}</p> {{ new Date(blogData.date).toLocaleString() }}</div>
       <div class="page_img"><img :src="`https://www.hpvideo.io/uploads/${blogData.img_file}`" :alt="blogData.img_alt ? blogData.img_alt : ''"/></div>
-      <div class="page_text" v-html="blogData.editor_content"></div>
+      <div class="page_text" v-html="sanitizeHtml(blogData.editor_content)"></div>
     </div>
   </div>
 </template>
@@ -20,6 +20,7 @@
   import { defineComponent, ref, computed, watch, onMounted, inject } from "vue";
   import { useRoute, useRouter } from 'vue-router'
   import { getBlogInfo } from "@/api/index.js"
+  import { sanitizeHtml } from "@/utils/sanitize.js"
   import { useI18n } from "vue-i18n";
   import { useStore } from "vuex"
   export default defineComponent({
@@ -65,6 +66,7 @@
       return {
         lan,
         blogData,
+        sanitizeHtml,
       };
     }
   })
