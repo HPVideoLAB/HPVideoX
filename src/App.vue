@@ -40,9 +40,40 @@
   width: 100%;
   overflow: hidden;
   min-width: 1200px;
-  background: #000000; 
+  background: #000000;
   font-family: "Outfit";
 }
+
+/* ==============================================================
+ * Mobile / tablet override.
+ * The site was originally desktop-only with hardcoded min-width:
+ * 1200px on dozens of containers. Rather than rewrite every
+ * layout, we clear those constraints below 1200px so the content
+ * flows inside the viewport. This unlocks mobile/tablet users
+ * without touching desktop behaviour.
+ * ==============================================================
+ */
+@media screen and (max-width: 1199px) {
+  html, body {
+    overflow-x: auto;
+  }
+  #app,
+  #app .top_fixed,
+  #app .home_cont,
+  #app .page_cont,
+  #app .content,
+  #app .footer_cont,
+  #app .menu_cont {
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  #app * {
+    max-width: 100vw;
+  }
+}
+
 body, p, div, span, li {
   margin: 0;
 }
