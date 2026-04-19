@@ -20,12 +20,31 @@ app.use(head)
 app.use(i18n)
 app.use(router)
 app.use(store)
-// app.use(VueLazyload, {
-//   preLoad: 1.3,
-//   error: errorimage,
-//   loading: loadimage,
-//   attempt: 1
-// })
+
+// Auto-apply native lazy loading + async decoding to every <img>.
+// Hero / above-the-fold images can opt out with loading="eager".
+// This is a cheap global perf win with zero runtime cost vs
+// IntersectionObserver-based lazy loaders.
+if (typeof window !== 'undefined' && 'loading' in HTMLImageElement.prototype) {
+  const applyLazy = (img) => {
+    if (!img.hasAttribute('loading')) img.setAttribute('loading', 'lazy')
+    if (!img.hasAttribute('decoding')) img.setAttribute('decoding', 'async')
+  }
+  // Initial pass + observe future nodes.
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('img').forEach(applyLazy)
+    new MutationObserver((mutations) => {
+      for (const m of mutations) {
+        for (const n of m.addedNodes) {
+          if (n.nodeType === 1) {
+            if (n.tagName === 'IMG') applyLazy(n)
+            else n.querySelectorAll && n.querySelectorAll('img').forEach(applyLazy)
+          }
+        }
+      }
+    }).observe(document.body, { childList: true, subtree: true })
+  })
+}
 
 app.directive('animate', {
   mounted: function (el, binding) {
