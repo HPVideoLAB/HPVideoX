@@ -454,7 +454,7 @@ export default {
     },
     qs5: {
       title: "5. Which AI models does HPVideo support?",
-      text: 'HPVideo supports WAN 2.5, SORA 2, OVI, VEO 3.1, LTX 2 Pro, KLING V2.0, PIXVERSE V4.5 and others. Each model specializes in different visual styles and creative scenarios.'
+      text: 'HPVideo supports WAN 2.7, LUMA RAY 2, OVI, VEO 3.1, LTX 2.3, KLING V3.0, PIXVERSE V6, SEEDANCE 2.0, HAILUO 2.3, VIDU Q3 and others. Each model specializes in different visual styles and creative scenarios.'
     },
     qs6: {
       title: "6. How much does it cost to generate a video?",

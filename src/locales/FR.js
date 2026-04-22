@@ -418,7 +418,7 @@ export default {
     },
     qs5: {
       title: "5. Quels modèles IA sont pris en charge ?",
-      text: "HPVideo prend en charge WAN 2.5, SORA, OVI, VEO 3.1, LTX2 Pro, KLING V2.0, PIXVERSE V4.5 et d’autres modèles. Chaque modèle est adapté à des styles visuels et des cas d’usage différents."
+      text: "HPVideo prend en charge WAN 2.7, LUMA RAY 2, OVI, VEO 3.1, LTX 2.3, KLING V3.0, PIXVERSE V6, SEEDANCE 2.0, HAILUO 2.3, VIDU Q3 et d'autres modèles."
     },
     qs6: {
       title: "6. Combien coûte la génération d’une vidéo ?",

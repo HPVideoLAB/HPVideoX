@@ -418,7 +418,7 @@ export default {
     },
     qs5: {
       title: "5. HPVideo 支持哪些 AI 模型？",
-      text: 'HPVideo 支持 WAN 2.5、SORA 2、OVI、VEO 3.1、LTX 2 Pro、KLING V2.0、PIXVERSE V4.5 等多种模型。每个模型都擅长不同的视觉风格和创作场景。'
+      text: 'HPVideo 支持 WAN 2.7、LUMA RAY 2、OVI、VEO 3.1、LTX 2.3、KLING V3.0、PIXVERSE V6、SEEDANCE 2.0、HAILUO 2.3、VIDU Q3 等多种模型。每个模型都擅长不同的视觉风格和创作场景。'
     },
     qs6: {
       title: "6. 生成一段视频需要多少钱？",

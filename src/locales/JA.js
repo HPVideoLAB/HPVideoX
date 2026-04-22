@@ -418,7 +418,7 @@ export default {
     },
     qs5: {
       title: "5. どのAIモデルを利用できますか？",
-      text: "WAN 2.5、SORA、OVI、VEO 3.1、LTX2 Pro、KLING V2.0、PIXVERSE V4.5などをサポートしています。"
+      text: "WAN 2.7、LUMA RAY 2、OVI、VEO 3.1、LTX 2.3、KLING V3.0、PIXVERSE V6、SEEDANCE 2.0、HAILUO 2.3、VIDU Q3 などをサポートしています。"
     },
     qs6: {
       title: "6. 動画生成のコストは？",

@@ -418,7 +418,7 @@ export default {
     },
     qs5: {
       title: "5. HPVideo는 어떤 AI 모델을 지원하나요?",
-      text: "WAN 2.5, SORA, OVI, VEO 3.1, LTX2 Pro, KLING V2.0, PIXVERSE V4.5 등 다양한 모델을 지원하며, 각 모델은 특정 비주얼 스타일과 용도에 특화되어 있습니다."
+      text: "WAN 2.7, LUMA RAY 2, OVI, VEO 3.1, LTX 2.3, KLING V3.0, PIXVERSE V6, SEEDANCE 2.0, HAILUO 2.3, VIDU Q3 등 다양한 모델을 지원하며, 각 모델은 특정 비주얼 스타일과 용도에 특화되어 있습니다."
     },
     qs6: {
       title: "6. 영상 생성 비용은 얼마인가요?",
