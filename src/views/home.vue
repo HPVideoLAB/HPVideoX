@@ -346,7 +346,7 @@
       const videoData = ref([
         {
           video: 'https://www.youtube.com/embed/M1FhHfY82mY?si=Zh8m_1GZGTQoHBqV',
-          title: "SORA 2",
+          title: "LUMA RAY 2",
           desc: t('home.cont1.model1.text'),
           tips: t('home.cont1.model1.tips')
         },
@@ -358,39 +358,39 @@
         },
         {
           video: 'https://www.youtube.com/embed/dnSan_D8Des?si=cH3FQuIQ3LU2h66a',
-          title: "KLING V2.0",
+          title: "KLING V3.0",
           desc: t('home.cont1.model3.text'),
           tips: t('home.cont1.model3.tips')
         },
         {
           video: 'https://www.youtube.com/embed/Yn6sDfH_dRU?si=GLhYUHczp-k0oJ_x',
-          title: "PIXVERSE V4.5",
+          title: "PIXVERSE V6",
           desc: t('home.cont1.model4.text'),
           tips: t('home.cont1.model4.tips')
         },
         {
           video: 'https://www.youtube.com/embed/nKeCnvsYN3c?si=coLZys8CLBWGe4Ma',
-          title: "LTX 2 PRO",
+          title: "LTX 2.3",
           desc: t('home.cont1.model5.text'),
           tips: t('home.cont1.model5.tips')
         },
         
         {
           video: 'https://www.youtube.com/embed/kDBdqhn6vXg?si=lK3rxUVF76gOK4Jt',
-          title: "WAN 2.5",
+          title: "WAN 2.7",
           desc: t('home.cont1.model6.text'),
           tips: t('home.cont1.model6.tips')
         },
         
         {
           video: 'https://www.youtube.com/embed/J18idUz87LA?si=h-B2zHCNEgVzpRx0',
-          title: "HAILUO 02",
+          title: "HAILUO 2.3",
           desc: t('home.cont1.model7.text'),
           tips: t('home.cont1.model7.tips')
         },
         {
           video: 'https://www.youtube.com/embed/-hDVEou4cus?si=b9LlL1O9rZiuA7a1',
-          title: "SEEDANCE V1",
+          title: "SEEDANCE 2.0",
           desc: t('home.cont1.model8.text'),
           tips: t('home.cont1.model8.tips')
         },
@@ -955,7 +955,7 @@
         videoData.value = [
           {
             video: 'https://www.youtube.com/embed/M1FhHfY82mY?si=Zh8m_1GZGTQoHBqV',
-            title: "SORA 2",
+            title: "LUMA RAY 2",
             desc: t('home.cont1.model1.text'),
             tips: t('home.cont1.model1.tips')
           },
@@ -967,39 +967,39 @@
           },
           {
             video: 'https://www.youtube.com/embed/dnSan_D8Des?si=cH3FQuIQ3LU2h66a',
-            title: "KLING V2.0",
+            title: "KLING V3.0",
             desc: t('home.cont1.model3.text'),
             tips: t('home.cont1.model3.tips')
           },
           {
             video: 'https://www.youtube.com/embed/Yn6sDfH_dRU?si=GLhYUHczp-k0oJ_x',
-            title: "PIXVERSE V4.5",
+            title: "PIXVERSE V6",
             desc: t('home.cont1.model4.text'),
             tips: t('home.cont1.model4.tips')
           },
           {
             video: 'https://www.youtube.com/embed/nKeCnvsYN3c?si=coLZys8CLBWGe4Ma',
-            title: "LTX 2 PRO",
+            title: "LTX 2.3",
             desc: t('home.cont1.model5.text'),
             tips: t('home.cont1.model5.tips')
           },
           
           {
             video: 'https://www.youtube.com/embed/kDBdqhn6vXg?si=lK3rxUVF76gOK4Jt',
-            title: "WAN 2.5",
+            title: "WAN 2.7",
             desc: t('home.cont1.model6.text'),
             tips: t('home.cont1.model6.tips')
           },
           
           {
             video: 'https://www.youtube.com/embed/J18idUz87LA?si=h-B2zHCNEgVzpRx0',
-            title: "HAILUO 02",
+            title: "HAILUO 2.3",
             desc: t('home.cont1.model7.text'),
             tips: t('home.cont1.model7.tips')
           },
           {
             video: 'https://www.youtube.com/embed/-hDVEou4cus?si=b9LlL1O9rZiuA7a1',
-            title: "SEEDANCE V1",
+            title: "SEEDANCE 2.0",
             desc: t('home.cont1.model8.text'),
             tips: t('home.cont1.model8.tips')
           },

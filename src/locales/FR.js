@@ -180,7 +180,7 @@ export default {
       title: "Modèles pris en charge par HPVideo",
       learn_more: "En savoir plus",
       li1: {
-        title: "Wan2.5",
+        title: "Wan 2.7",
         text1: "Date de sortie : 24 septembre 2025 (aperçu). La version « WAN 2.5 » est disponible en API et accès public.",
         text2: "Développeur : Alibaba Tongyi Lab (laboratoire d’IA d’Alibaba Cloud)."
       },
@@ -195,32 +195,32 @@ export default {
         text2: "Développeur : Google DeepMind (laboratoire d’IA au Royaume-Uni, filiale d’Alphabet)."
       },
       li4: {
-        title: "LTX2 Pro",
+        title: "LTX 2.3",
         text1: "Date de sortie : 20 juillet 2025 (test exclusif mobile). L’API Web a été lancée le 30 octobre 2025.",
         text2: "Développeur : Lightricks (entreprise israélienne spécialisée dans les outils créatifs IA)."
       },
       li5: {
-        title: "HAILUO 02",
+        title: "HAILUO 2.3",
         text1: "Date de sortie : 30 septembre 2025 (test fermé pour partenaires). L’API publique et la démo Web sont sorties le 10 novembre 2025.",
         text2: "Développeur : Minimax (start-up chinoise axée sur la génération multimodale et les solutions IA pour entreprises)."
       },
       li6: {
-        title: "SEEDSNCE V1",
+        title: "SEEDANCE 2.0",
         text1: "Date de sortie : 12 octobre 2025 (test interne écosystème ByteDance). L’API publique et l’intégration à TikTok Creator Studio ont été lancées le 20 novembre 2025.",
         text2: "Développeur : ByteDance AI Lab (division R&D IA d’une entreprise technologique mondiale)."
       },
       li7: {
-        title: "KLING V2.0",
+        title: "KLING V3.0",
         text1: "Date de sortie : 5 novembre 2025 (test public développeurs). L’API entreprise et les options d’auto-hébergement sont disponibles depuis le 22 novembre 2025.",
         text2: "Développeur : Kwaivgi (start-up IA basée à Singapour, dédiée à l’écosystème développeur global)."
       },
       li8: {
-        title: "PIXVERSE V4.5",
+        title: "PIXVERSE V6",
         text1: "Date de sortie : 18 septembre 2025 (test public pour créateurs). L’API entreprise et les fonctions collaboratives ont été lancées le 15 novembre 2025.",
         text2: "Développeur : Pixverse AI (start-up américaine avec une équipe R&D mondiale, axée sur la génération visuelle de haute qualité)."
       },
       li9: {
-        title: "SORA (OpenAI)",
+        title: "Luma Ray 2",
         text1: "Date de sortie : février 2024 (aperçu). La version « SORA 2 » n’a pas encore été annoncée officiellement.",
         text2: "Développeur : OpenAI (laboratoire de recherche en IA basé aux États-Unis)."
       }
@@ -231,7 +231,7 @@ export default {
     text1: "HPVideo est une plateforme pionnière de génération vidéo IA décentralisée, qui s’appuie sur un réseau distribué pour offrir une puissance de création fiable et efficace. Les utilisateurs peuvent transformer des prompts texte en images animées de haute qualité, construites image par image.",
     text2: "HPVideo vise également à créer un environnement de co-création ouvert, connectant la communauté mondiale afin de bâtir ensemble des histoires innovantes et des récits partagés.",
     model1: {
-      title: "Wan2.5",
+      title: "Wan 2.7",
       text1: "Date de sortie : 24 septembre 2025 (aperçu). La version « WAN 2.5 » est disponible en API et accès public.",
       text2: "Développeur : Alibaba Tongyi Lab (laboratoire d’IA d’Alibaba Cloud).",
       text3_1: "Points clés :",
@@ -261,7 +261,7 @@ export default {
       text4: "Sortie : vidéos 1080p (30 fps), HDR 8 bits, forte richesse des détails, sons d’ambiance synchronisés (voix off personnalisable)."
     },
     model4: {
-      title: "LTX2 Pro",
+      title: "LTX 2.3",
       text1: "Date de sortie : 20 juillet 2025 (test mobile exclusif). API Web disponible depuis le 30 octobre 2025.",
       text2: "Développeur : Lightricks (entreprise israélienne, connue pour ses outils créatifs IA).",
       text3_1: "Points clés :",
@@ -271,7 +271,7 @@ export default {
       text4: "Sortie : vidéos 720p (30 fps), transitions fluides, couleurs optimisées pour les réseaux sociaux, avec segment audio court synchronisé."
     },
     model5: {
-      title: "HAILUO 02",
+      title: "HAILUO 2.3",
       text1: "Date de sortie : 30 septembre 2025 (test fermé pour partenaires). API publique et démo Web disponibles depuis le 10 novembre 2025.",
       text2: "Développeur : Minimax (start-up chinoise spécialisée dans la génération multimodale et les solutions IA pour entreprises).",
       text3_1: "Points clés :",
@@ -281,7 +281,7 @@ export default {
       text4: "Sortie : vidéos 1080p (24 fps), flou de mouvement de niveau cinéma, éclairage réaliste, BGM, voix off et sons d’ambiance synchronisés (formats MP4/WEBM)."
     },
     model6: {
-      title: "SEEDSNCE V1",
+      title: "SEEDANCE 2.0",
       text1: "Date de sortie : 12 octobre 2025 (test interne ByteDance). API REST publique et intégration à TikTok Creator Studio depuis le 20 novembre 2025.",
       text2: "Développeur : ByteDance AI Lab (division R&D IA d’un groupe technologique global).",
       text3_1: "Points clés :",
@@ -292,7 +292,7 @@ export default {
       text4: "Sortie : vidéos 480p (30 fps, formats 9:16 et 16:9), mouvements fluides, couleurs optimisées TikTok, audio court (musique, voix, effets) synchronisé (formats MP4/AVC)."
     },
     model7: {
-      title: "KLING V2.0",
+      title: "KLING V3.0",
       text1: "Date de sortie : 5 novembre 2025 (test public développeur). API entreprise et options d’auto-hébergement disponibles depuis le 22 novembre 2025.",
       text2: "Développeur : Kwaivgi (start-up IA basée à Singapour, axée sur la génération multimodale pour les développeurs).",
       text3_1: "Points clés :",
@@ -303,7 +303,7 @@ export default {
       text4: "Sortie : vidéos 1080p (24/30 fps, formats 1:1, 9:16, 16:9), rendu très réaliste, cohérence spatiale forte, audio synchronisé (voix off, sons d’ambiance, pistes personnalisées) en MP4/WEBM/AV1."
     },
     model8: {
-      title: "PIXVERSE V4.5",
+      title: "PIXVERSE V6",
       text1: "Date de sortie : 18 septembre 2025 (test public pour créateurs). API entreprise et fonctions de collaboration disponibles depuis le 15 novembre 2025 (feuille de route pour la V5.0 et la 4K prévue T1 2026).",
       text2: "Développeur : Pixverse AI (start-up américaine avec équipe R&D mondiale, spécialisée dans la génération visuelle haut de gamme).",
       text3_1: "Points clés :",
@@ -314,7 +314,7 @@ export default {
       text4: "Sortie : vidéos 1080p (24/30/60 fps, formats 1:1, 9:16, 16:9, 21:9), HDR 10 bits, plage dynamique ciné, audio haute fidélité (5.1 pour les clients entreprise), formats MP4/ProRes/AV1 (ProRes réservé à l’édition pro)."
     },
     model9: {
-      title: "SORA (OpenAI)",
+      title: "Luma Ray 2",
       text1: "Date de sortie : février 2024 (aperçu). Aucune annonce officielle de « SORA 2 » pour l’instant.",
       text2: "Développeur : OpenAI (laboratoire d’IA américain).",
       text3_1: "Points clés :",

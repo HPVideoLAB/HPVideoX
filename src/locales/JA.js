@@ -180,7 +180,7 @@ export default {
       title: "HPVideos 対応モデル",
       learn_more: "詳細はこちら",
       li1: {
-        title: "Wan2.5",
+        title: "Wan 2.7",
         text1: "リリース: 2025年9月24日（プレビュー版）; 「WAN 2.5 正式版」では API アクセスと一般公開が開始されました（後続バージョンの公式プレビューはありません）。",
         text2: "開発元: Alibaba (中国) Tongyi Lab (Alibaba Cloud Intelligence Group 傘下の AI 研究開発機関)。"
       },
@@ -195,32 +195,32 @@ export default {
         text2: "開発元: Google DeepMind（英国に拠点を置くAI研究機関、Alphabet Inc.傘下）。"
       },
       li4: {
-        title: "LTX2 Pro",
+        title: "LTX 2.3",
         text1: "リリース: 2025年7月20日（モバイルアプリ限定ベータ版）; ウェブベースのAPIアクセスは2025年10月30日に開始（2025年11月現在、「LTX-3」の公式タイムラインはありません。）",
         text2: "開発元: Lightricks（イスラエルに拠点を置くAIクリエイティブツール企業、Facetune/CapCutの競合製品で知られる）。"
       },
       li5: {
-        title: "HAILUO 02",
+        title: "HAILUO 2.3",
         text1: "リリース: 2025年9月30日（エンタープライズパートナー向けクローズドベータ版）；パブリックAPIとウェブデモは2025年11月10日にリリース（現時点では「Hailuo-03」の公式ロードマップは未定）",
         text2: "開発元: Minimax（マルチモーダル生成とエンタープライズAIソリューションを専門とする中国拠点のAIスタートアップ企業）"
       },
       li6: {
-        title: "SEEDSNCE V1",
+        title: "SEEDANCE 2.0",
         text1: "リリース: 2025年10月12日（ByteDanceエコシステムアプリ向け社内ベータ版）。パブリックREST APIとTikTok Creator Studioとの統合は2025年11月20日に開始（現時点では「V2」の公式発表はありません）。",
         text2: "開発元: ByteDance AI Lab（中国に拠点を置くグローバルテクノロジー企業のR&D部門。マルチモーダル生成と短編コンテンツツールを専門としています。）"
       },
       li7: {
-        title: "KLING V2.0",
+        title: "KLING V3.0",
         text1: "リリース: 2025年11月5日（開発者向けパブリックベータ版）; エンタープライズAPIアクセスとセルフホスト型デプロイメントオプションは2025年11月22日に開始（現時点では「V3.0」の公式ロードマップは未定）",
         text2: "開発元: Kwaivgi（シンガポールに拠点を置くAIスタートアップ企業。グローバルな開発者エコシステム向けの軽量マルチモーダル生成に注力）。"
       },
       li8: {
-        title: "PIXVERSE V4.5",
+        title: "PIXVERSE V6",
         text1: "リリース: 2025年9月18日（個人クリエイター向けパブリックベータ版）; エンタープライズAPIとチームコラボレーション機能は2025年11月15日にリリース（公式の「V5.0」ロードマップは2026年第1四半期に公開予定。4K出力に重点を置く）。",
         text2: "開発元: Pixverse AI（グローバルな研究開発チームを擁する米国のスタートアップ企業。クリエイターと企業向けの高品質ビジュアル生成を専門とする）"
       },
       li9: {
-        title: "SORA (OpenAI)",
+        title: "Luma Ray 2",
         text1: "リリース: 2024年2月（プレビュー）; 「SORA 2」は正式発表されていない（推測に基づくバージョンアップの可能性あり）。",
         text2: "開発元: OpenAI（米国のAI研究機関）。",
       }
@@ -231,7 +231,7 @@ export default {
     text1: "HPVideoは、分散ネットワーク上で動作する分散型AIビデオ生成プラットフォームです。テキストプロンプトを入力するだけで、フレーム単位で構築された高品質な映像を生成できます。生成プロセスはタイムスタンプで検証され、すべての作品の所有権が明確に保証されます。",
     text2: "さらにHPVideoは、世界中のクリエイターをつなぐオープンな共同制作環境を提供し、共有された物語を通して新しい創作文化を築いていきます。",
     model1: {
-      title: "Wan2.5",
+      title: "Wan 2.7",
       text1: "リリース日：2025年9月24日（プレビュー版）。WAN 2.5正式版はAPIおよび一般公開済みです。",
       text2: "開発元：Alibaba Tongyi Lab（アリババクラウド傘下のAI研究所）。",
       text3_1: "機能概要：",
@@ -261,7 +261,7 @@ export default {
       text4: "出力：1080p（30fps）HDR映像、環境音やナレーションの同期サポート。"
     },
     model4: {
-      title: "LTX2 Pro",
+      title: "LTX 2.3",
       text1: "リリース日：2025年7月20日（モバイル限定テスト）、10月30日にWeb API公開。",
       text2: "開発元：Lightricks（イスラエルのAIクリエイティブ企業、Facetune/CapCut競合）。",
       text3_1: "機能概要：",
@@ -271,7 +271,7 @@ export default {
       text4: "出力：720p（30fps）、ソーシャルメディア向け色調最適化済み短尺映像。"
     },
     model5: {
-      title: "HAILUO 02",
+      title: "HAILUO 2.3",
       text1: "リリース日：2025年9月30日（クローズドテスト）、11月10日にAPIとWebデモ公開。",
       text2: "開発元：Minimax（中国AIスタートアップ、多モーダル生成に特化）。",
       text3_1: "機能概要：",
@@ -281,7 +281,7 @@ export default {
       text4: "出力：1080p（24fps）、映画レベルの動きと照明、BGM/ナレーション同期。"
     },
     model6: {
-      title: "SEEDSNCE V1",
+      title: "SEEDANCE 2.0",
       text1: "リリース日：2025年10月12日（ByteDance内テスト）、11月20日にTikTok Creator Studio API公開。",
       text2: "開発元：ByteDance AI Lab（グローバルAI研究部門）。",
       text3_1: "機能概要：",
@@ -292,7 +292,7 @@ export default {
       text4: "出力：480p（30fps、9:16/16:9対応）、TikTok最適化色彩、音楽・効果音同期。"
     },
     model7: {
-      title: "KLING V2.0",
+      title: "KLING V3.0",
       text1: "リリース日：2025年11月5日（開発者向けテスト）、11月22日企業API・自動ホスティング公開。",
       text2: "開発元：Kwaivgi（シンガポール拠点のAIスタートアップ）。",
       text3_1: "機能概要：",
@@ -303,7 +303,7 @@ export default {
       text4: "出力：1080p（24/30fps）、MP4/WEBM/AV1形式、リアルな質感描写。"
     },
     model8: {
-      title: "PIXVERSE V4.5",
+      title: "PIXVERSE V6",
       text1: "リリース日：2025年9月18日（一般公開テスト）、11月15日企業向け機能追加。",
       text2: "開発元：Pixverse AI（米国本社のグローバル開発チーム）。",
       text3_1: "機能概要：",
@@ -314,7 +314,7 @@ export default {
       text4: "出力：1080p（24/30/60fps）、HDR10bit、MP4/ProRes/AV1形式。"
     },
     model9: {
-      title: "SORA (OpenAI)",
+      title: "Luma Ray 2",
       text1: "リリース日：2024年2月（プレビュー版）。SORA 2は未発表。",
       text2: "開発元：OpenAI（米国のAI研究所）。",
       text3_1: "機能概要：",

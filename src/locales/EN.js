@@ -180,7 +180,7 @@ export default {
       title: "HPVideos Supported models",
       learn_more: "Learn more",
       li1: {
-        title: "Wan2.5",
+        title: "Wan 2.7",
         text1: "Release: September 24, 2025 (preview version); the 'WAN 2.5 official version' has opened API access and public experience (no official preview for subsequent versions).",
         text2: "Developer: Alibaba (China) Tongyi Lab (AI R&D institution under Alibaba Cloud Intelligence Group)."
       },
@@ -195,32 +195,32 @@ export default {
         text2: "Developer: Google DeepMind (U.K.-based AI research lab, part of Alphabet Inc.)."
       },
       li4: {
-        title: "LTX2 Pro",
+        title: "LTX 2.3",
         text1: "Release: July 20, 2025 (mobile app exclusive beta); web-based API access launched October 30, 2025 (no 'LTX-3' official timeline as of November 2025).",
         text2: "Developer: Lightricks (Israel-based AI creative tools company, known for Facetune/CapCut competitors)."
       },
       li5: {
-        title: "HAILUO 02",
+        title: "HAILUO 2.3",
         text1: "Release: September 30, 2025 (closed beta for enterprise partners); public API and web demo launched November 10, 2025 (no official 'Hailuo-03' roadmap as of now).",
         text2: "Developer: Minimax (China-based AI startup, specializing in multimodal generation and enterprise AI solutions)."
       },
       li6: {
-        title: "SEEDSNCE V1",
+        title: "SEEDANCE 2.0",
         text1: "Release: October 12, 2025 (internal beta for ByteDance ecosystem apps); public REST API and TikTok Creator Studio integration launched November 20, 2025 (no 'V2' official announcement as of now).",
         text2: "Developer: ByteDance AI Lab (China-based global tech company’s R&D division, specializing in multimodal generation and short-form content tools)."
       },
       li7: {
-        title: "KLING V2.0",
+        title: "KLING V3.0",
         text1: "Release: November 5, 2025 (public beta for developers); enterprise API access and self-hosted deployment options launched November 22, 2025 (no 'V3.0' official roadmap as of now).",
         text2: "Developer: Kwaivgi (Singapore-based AI startup, focused on lightweight multimodal generation for global developer ecosystems)."
       },
       li8: {
-        title: "PIXVERSE V4.5",
+        title: "PIXVERSE V6",
         text1: "Release: September 18, 2025 (public beta for individual creators); enterprise API and team collaboration features launched November 15, 2025 (official 'V5.0' roadmap teased for Q1 2026, focusing on 4K output).",
         text2: "Developer: Pixverse AI (U.S.-based startup with global R&D teams, specializing in high-quality visual generation for creators and enterprises)"
       },
       li9: {
-        title: "SORA (OpenAI)",
+        title: "Luma Ray 2",
         text1: "Release: February 2024 (preview); 'SORA 2' not officially announced (likely speculative versioning).",
         text2: "Developer: OpenAI (U.S.-based AI research lab).",
       }
@@ -231,7 +231,7 @@ export default {
     text1: "HPVideo is a pioneering decentralized platform for AI-powered video generation. It utilizes a distributed network to ensure powerful, trustworthy, and efficient creation. Users can easily transform text prompts into high-quality, frame-by-frame visual motion. The platform guarantees authentic ownership, protecting your creativity with timestamped verification and a transparent process.",
     text2: "Furthermore, HPVideo fosters open collective creation, uniting global communities to build upon shared narratives and co-create innovative stories, redefining collaborative digital storytelling.",
     model1: {
-      title: "Wan2.5",
+      title: "Wan 2.7",
       text1: "Release: September 24, 2025 (preview version); the 'WAN 2.5 official version' has opened API access and public experience (no official preview for subsequent versions).",
       text2: "Developer: Alibaba (China) Tongyi Lab (AI R&D institution under Alibaba Cloud Intelligence Group).",
       text3_1: "Features:",
@@ -261,7 +261,7 @@ export default {
       text4: "Output: 1080p video (30fps) with 8-bit HDR color grading, detailed object textures, and synchronized ambient audio (supports custom voiceover uploads)."
     },
     model4: {
-      title: "LTX2 Pro",
+      title: "LTX 2.3",
       text1: "Release: July 20, 2025 (mobile app exclusive beta); web-based API access launched October 30, 2025 (no 'LTX-3' official timeline as of November 2025).",
       text2: "Developer: Lightricks (Israel-based AI creative tools company, known for Facetune/CapCut competitors).",
       text3_1: "Features:",
@@ -271,7 +271,7 @@ export default {
       text4: "Output: 720p video (30fps) with smooth motion transitions, social-media-ready color grading, and synchronized short-form audio clips."
     },
     model5: {
-      title: "HAILUO 02",
+      title: "HAILUO 2.3",
       text1: "Release: September 30, 2025 (closed beta for enterprise partners); public API and web demo launched November 10, 2025 (no official 'Hailuo-03' roadmap as of now).",
       text2: "Developer: Minimax (China-based AI startup, specializing in multimodal generation and enterprise AI solutions).",
       text3_1: "Features:",
@@ -281,7 +281,7 @@ export default {
       text4: "Output: 1080p video (24fps) with cinematic motion blur, realistic lighting effects, and synchronized audio (background music, voiceovers, ambient sounds); supports MP4/WEBM formats for cross-platform compatibility."
     },
     model6: {
-      title: "SEEDSNCE V1",
+      title: "SEEDANCE 2.0",
       text1: "Release: October 12, 2025 (internal beta for ByteDance ecosystem apps); public REST API and TikTok Creator Studio integration launched November 20, 2025 (no 'V2' official announcement as of now).",
       text2: "Developer: ByteDance AI Lab (China-based global tech company’s R&D division, specializing in multimodal generation and short-form content tools).",
       text3_1: "Features:",
@@ -292,7 +292,7 @@ export default {
       text4: "Output: 480p video (30fps, 9:16/16:9 aspect ratios) with smooth motion, TikTok-optimized color grading, and synchronized short-form audio (licensed music library, voiceovers, trend sounds); supports MP4/AVC formats for social media compatibility."
     },
     model7: {
-      title: "KLING V2.0",
+      title: "KLING V3.0",
       text1: "Release: November 5, 2025 (public beta for developers); enterprise API access and self-hosted deployment options launched November 22, 2025 (no 'V3.0' official roadmap as of now).",
       text2: "Developer: Kwaivgi (Singapore-based AI startup, focused on lightweight multimodal generation for global developer ecosystems).",
       text3_1: "Features:",
@@ -303,7 +303,7 @@ export default {
       text4: "Output: 1080p video (24/30fps, 1:1/9:16/16:9 aspect ratios) with realistic texture rendering, spatial consistency, and synchronized audio (voiceovers, ambient sounds, custom audio uploads); supports MP4/WEBM/AV1 formats for cross-platform and low-bandwidth use cases." 
     },
     model8: {
-      title: "PIXVERSE V4.5",
+      title: "PIXVERSE V6",
       text1: "Release: September 18, 2025 (public beta for individual creators); enterprise API and team collaboration features launched November 15, 2025 (official 'V5.0' roadmap teased for Q1 2026, focusing on 4K output).",
       text2: "Developer: Pixverse AI (U.S.-based startup with global R&D teams, specializing in high-quality visual generation for creators and enterprises).",
       text3_1: "Features:",
@@ -314,7 +314,7 @@ export default {
       text4: "Output: 1080p video (24/30/60fps, 1:1/9:16/16:9/21:9 aspect ratios) with 10-bit HDR, film-like dynamic range, and synchronized high-fidelity audio (5.1 surround sound support for enterprise users); supports MP4/ProRes/AV1 formats (ProRes exclusive to enterprise plans)." 
     },
     model9: {
-      title: "SORA (OpenAI)",
+      title: "Luma Ray 2",
       text1: "Release: February 2024 (preview); 'SORA 2' not officially announced (likely speculative versioning).",
       text2: "Developer: OpenAI (U.S.-based AI research lab).",
       text3_1: "Features:",
