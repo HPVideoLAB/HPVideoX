@@ -402,11 +402,11 @@ export default {
     text: "FAQ 问答",
     qs1: {
       title: "1. 什么是 HPVideo？",
-      text: 'HPVideo 是部署在 BNB Chain 上的去中心化 AI 文本转视频平台，旨在为 AI Agent 时代打造未来的“视频基础设施层”。用户只需连接钱包、选择视频模型（如 SORA、WAN、KLING）、输入提示词与时长、支付少量 USDT，即可生成高质量视频——无需邮箱注册、实名认证或提交任何个人信息。'
+      text: 'HPVideo 是部署在 BNB Chain 上的去中心化 AI 文本转视频平台，旨在为 AI Agent 时代打造未来的“视频基础设施层”。用户只需连接钱包、选择视频模型（如 WAN、KLING、Luma Ray 2）、输入提示词与时长、支付少量 USDT，即可生成高质量视频——无需邮箱注册、实名认证或提交任何个人信息。'
     },
     qs2: {
       title: "2. HPVideo 如何生成 AI 视频？",
-      text: 'HPVideo 是部署在 BNB Chain 上的去中心化 AI 文本转视频平台，旨在为 AI Agent 时代打造未来的“视频基础设施层”。用户只需连接钱包、选择视频模型（如 SORA、WAN、KLING）、输入提示词与时长、支付少量 USDT，即可生成高质量视频——无需邮箱注册、实名认证或提交任何个人信息。'
+      text: 'HPVideo 是部署在 BNB Chain 上的去中心化 AI 文本转视频平台，旨在为 AI Agent 时代打造未来的“视频基础设施层”。用户只需连接钱包、选择视频模型（如 WAN、KLING、Luma Ray 2）、输入提示词与时长、支付少量 USDT，即可生成高质量视频——无需邮箱注册、实名认证或提交任何个人信息。'
     },
     qs3: {
       title: "3. 为什么 HPVideo 使用钱包登录？",

@@ -402,7 +402,7 @@ export default {
     text: "FAQ",
     qs1: {
       title: "1. HPVideoとは？",
-      text: "HPVideoはBNBチェーン上の分散型AIテキスト→ビデオプラットフォームです。ウォレットを接続し、モデル（SORA、WAN、KLINGなど）を選び、プロンプトと長さを指定して少額のUSDTを支払うだけで、高品質な映像を生成できます。"
+      text: "HPVideoはBNBチェーン上の分散型AIテキスト→ビデオプラットフォームです。ウォレットを接続し、モデル（WAN、KLING、Luma Ray 2など）を選び、プロンプトと長さを指定して少額のUSDTを支払うだけで、高品質な映像を生成できます。"
     },
     qs2: {
       title: "2. どのようにしてAI映像を生成しますか？",

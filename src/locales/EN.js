@@ -438,11 +438,11 @@ export default {
     text: "Frequently asked questions",
     qs1: {
       title: "1. What is HPVideo?",
-      text: 'HPVideo is a decentralized AI text-to-video platform deployed on BNB Chain and designed as a future “video infrastructure layer” for the AI Agent era. Users simply connect a wallet, select a video model (such as SORA, WAN, KLING), enter a prompt and duration, pay a small amount of USDT, and generate a high-quality video—without email registration, real-name verification, or any personal information.'
+      text: 'HPVideo is a decentralized AI text-to-video platform deployed on BNB Chain and designed as a future “video infrastructure layer” for the AI Agent era. Users simply connect a wallet, select a video model (such as WAN, KLING, Luma Ray 2), enter a prompt and duration, pay a small amount of USDT, and generate a high-quality video—without email registration, real-name verification, or any personal information.'
     },
     qs2: {
       title: "2. How does HPVideo generate AI videos?",
-      text: 'HPVideo is a decentralized AI text-to-video platform deployed on BNB Chain and designed as a future “video infrastructure layer” for the AI Agent era. Users simply connect a wallet, select a video model (such as SORA, WAN, KLING), enter a prompt and duration, pay a small amount of USDT, and generate a high-quality video—without email registration, real-name verification, or any personal information.'
+      text: 'HPVideo is a decentralized AI text-to-video platform deployed on BNB Chain and designed as a future “video infrastructure layer” for the AI Agent era. Users simply connect a wallet, select a video model (such as WAN, KLING, Luma Ray 2), enter a prompt and duration, pay a small amount of USDT, and generate a high-quality video—without email registration, real-name verification, or any personal information.'
     },
     qs3: {
       title: "3. Why does HPVideo use wallet login?",

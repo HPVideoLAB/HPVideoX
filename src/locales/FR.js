@@ -402,7 +402,7 @@ export default {
     text: "FAQ",
     qs1: {
       title: "1. Qu’est-ce que HPVideo ?",
-      text: "HPVideo est une plateforme décentralisée de génération vidéo IA basée sur BNB Chain, conçue comme une couche d’infrastructure vidéo pour l’ère des agents IA. Les utilisateurs connectent leur wallet, choisissent un modèle (SORA, WAN, KLING, etc.), saisissent un prompt et une durée, paient une petite somme en USDT, puis reçoivent une vidéo de haute qualité – sans e-mail, sans compte ni données personnelles."
+      text: "HPVideo est une plateforme décentralisée de génération vidéo IA basée sur BNB Chain, conçue comme une couche d’infrastructure vidéo pour l’ère des agents IA. Les utilisateurs connectent leur wallet, choisissent un modèle (WAN, KLING, Luma Ray 2, etc.), saisissent un prompt et une durée, paient une petite somme en USDT, puis reçoivent une vidéo de haute qualité – sans e-mail, sans compte ni données personnelles."
     },
     qs2: {
       title: "2. Comment HPVideo génère-t-il les vidéos ?",

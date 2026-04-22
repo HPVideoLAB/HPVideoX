@@ -402,7 +402,7 @@ export default {
     text: "FAQ",
     qs1: {
       title: "1. HPVideo란 무엇인가요?",
-      text: "HPVideo는 BNB 체인 위에 구축된 탈중앙화 AI 텍스트-비디오 플랫폼으로, AI Agent 시대를 위한 미래형 영상 인프라를 목표로 합니다. 지갑을 연결하고 SORA, WAN, KLING 등의 모델을 선택한 뒤 프롬프트와 길이를 입력하고 소량의 USDT를 지불하면, 계정 등록 없이 고품질 영상을 생성할 수 있습니다."
+      text: "HPVideo는 BNB 체인 위에 구축된 탈중앙화 AI 텍스트-비디오 플랫폼으로, AI Agent 시대를 위한 미래형 영상 인프라를 목표로 합니다. 지갑을 연결하고 WAN, KLING, Luma Ray 2 등의 모델을 선택한 뒤 프롬프트와 길이를 입력하고 소량의 USDT를 지불하면, 계정 등록 없이 고품질 영상을 생성할 수 있습니다."
     },
     qs2: {
       title: "2. HPVideo는 어떻게 영상을 생성하나요?",

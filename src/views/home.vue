@@ -394,6 +394,20 @@
           desc: t('home.cont1.model8.text'),
           tips: t('home.cont1.model8.tips')
         },
+        {
+          // Demo placeholder — swap once OVI demo is captured
+          video: 'https://www.youtube.com/embed/M1FhHfY82mY?si=Zh8m_1GZGTQoHBqV',
+          title: "OVI",
+          desc: "Character-focused audio-synced video from text and image inputs.",
+          tips: "Character"
+        },
+        {
+          // Demo placeholder — swap once Vidu Q3 demo is captured
+          video: 'https://www.youtube.com/embed/Yn6sDfH_dRU?si=GLhYUHczp-k0oJ_x',
+          title: "VIDU Q3",
+          desc: "High-quality motion-diverse video generation with cinematic results.",
+          tips: "Versatile"
+        },
       ])
       // hpvideo
       const scrollContent = ref(null);
@@ -1002,6 +1016,20 @@
             title: "SEEDANCE 2.0",
             desc: t('home.cont1.model8.text'),
             tips: t('home.cont1.model8.tips')
+          },
+          {
+            // Demo placeholder — swap once OVI demo is captured
+            video: 'https://www.youtube.com/embed/M1FhHfY82mY?si=Zh8m_1GZGTQoHBqV',
+            title: "OVI",
+            desc: "Character-focused audio-synced video from text and image inputs.",
+            tips: "Character"
+          },
+          {
+            // Demo placeholder — swap once Vidu Q3 demo is captured
+            video: 'https://www.youtube.com/embed/Yn6sDfH_dRU?si=GLhYUHczp-k0oJ_x',
+            title: "VIDU Q3",
+            desc: "High-quality motion-diverse video generation with cinematic results.",
+            tips: "Versatile"
           },
         ]
 
