@@ -50,6 +50,14 @@ export default {
       model8: {
         text: 'Features and Advantages: Emphasizing "multi-shot narrative with stable and smooth visuals." Designed to automatically generate short video narratives containing multiple shots (such as close-ups, medium shots, and wide shots), with smooth and stable transitions between shots, it is ideal for quickly creating storyboard-like short films or commercials.',
         tips: "A 30-second silent film-style narrative about a lost letter being returned. The sequence includes: 1) a close-up of an old letter in a mailbox, 2) a medium shot of a postman riding a bicycle through a rainy street, 3) a smooth transition to a close-up of a recipient’s surprised and joyful face."
+      },
+      model9: {
+        text: "Features and Advantages: Character-focused video generation with synchronized audio. Creates short clips from text or text+image inputs with natural motion and depth; great for avatar animation, conversational scenes, and stylized character work.",
+        tips: "A 5-second clip of a stylized anime character sitting in a sunlit cafe, speaking a single line of dialogue with matching lip-sync and subtle facial expression."
+      },
+      model10: {
+        text: "Features and Advantages: High-quality motion-diverse video generation with cinematic results and rich detail. Handles a wide range of subjects, camera moves, and visual styles with strong temporal consistency.",
+        tips: "A 8-second cinematic shot panning across an ancient library, dust motes in the air, soft candle light revealing rows of leather-bound books and a scholar writing at a desk."
       }
     },
     cont2: {
@@ -383,8 +391,8 @@ export default {
     text2: "All"
   },
   help: {
-    title: "Introducing SORA",
-    text: "Our next-generation series of AI models for media generation and world consistency.",
+    title: "AI Video Generation, Reinvented",
+    text: "Ten state-of-the-art AI models unified in one platform, powered by decentralized GPU compute.",
     btn1: "Try now",
     btn2: "See Docs",
     title1: "All the resources you need to make anything you want",

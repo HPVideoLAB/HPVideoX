@@ -50,6 +50,14 @@ export default {
       model8: {
         text: "Caractéristiques : spécialisé dans la narration multi-plans avec des transitions stables et fluides. Pensé pour générer automatiquement des vidéos courtes composées de gros plans, plans moyens et plans larges, parfait pour des clips publicitaires ou des mini-histoires.",
         tips: "Exemple : une séquence de 30 secondes façon cinéma muet sur une lettre perdue et retrouvée : 1) gros plan sur une vieille lettre dans une boîte aux lettres ; 2) plan moyen d’un facteur à vélo sous la pluie ; 3) transition douce vers un gros plan du destinataire, souriant en ouvrant la lettre."
+      },
+      model9: {
+        text: "Caractéristiques et avantages : génération vidéo centrée sur le personnage avec audio synchronisé. Produit de courts clips à partir de texte ou de texte+image avec un mouvement naturel et de la profondeur ; idéal pour les avatars animés, les scènes de dialogue et le travail de personnage stylisé.",
+        tips: "Un clip de 5 secondes d'un personnage de style anime assis dans un café ensoleillé, prononçant une réplique avec une synchronisation labiale précise et des expressions subtiles."
+      },
+      model10: {
+        text: "Caractéristiques et avantages : génération vidéo de haute qualité aux mouvements variés, avec des résultats cinématographiques et des détails riches. Gère une large gamme de sujets, de mouvements de caméra et de styles visuels avec une forte cohérence temporelle.",
+        tips: "Un plan cinématographique de 8 secondes qui balaie une ancienne bibliothèque, des grains de poussière dans l'air, une douce lumière de bougie révélant des rangées de livres reliés en cuir et un érudit qui écrit à un bureau."
       }
     },
     cont2: {
@@ -347,7 +355,7 @@ export default {
     text2: "Tout"
   },
   help: {
-    title: "Présentation de SORA",
+    title: "Génération vidéo par IA, réinventée",
     text: "Notre nouvelle génération de modèles IA pour la génération média cohérente avec le monde réel.",
     btn1: "Essayer maintenant",
     btn2: "Consulter la documentation",
