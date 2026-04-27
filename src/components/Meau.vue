@@ -2,6 +2,19 @@
   <div class="meau">
     <div class="content">
       <div class="logo" @click="linkHref('/')"><img src="../assets/logo.png" alt=""></div>
+      <!-- Mobile hamburger toggle. Hidden on desktop via media query.
+           Three-bar icon flips to an X when the drawer is open so the
+           same tap closes it. -->
+      <button
+        type="button"
+        class="hamburger"
+        :class="{ open: showMobileMenu }"
+        :aria-expanded="showMobileMenu ? 'true' : 'false'"
+        aria-label="Toggle navigation"
+        @click="toggleMobileMenu"
+      >
+        <span></span><span></span><span></span>
+      </button>
       <div v-if="route.path == '/learn' || route.path == '/helpcenter'" class="text_center">
         <span v-if="route.path == '/learn'">{{ $t("meau.nav6") }}</span>
         <span v-if="route.path == '/helpcenter'">{{ $t("meau.nav7") }}</span>
@@ -52,6 +65,28 @@
             <div class="lan_li" @click="handleCommand('ja')"><span class="country_icon jp"></span> 日本語</div>
             <div class="lan_li" @click="handleCommand('fr')"><span class="country_icon fr"></span> Français</div>
           </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile slide-down drawer. The desktop nav is hidden via App.vue
+         media queries below 1200px; this drawer fills that gap. Each
+         link calls closeMobileMenu after navigation (route watcher
+         handles it). -->
+    <div class="mobile_drawer" v-show="showMobileMenu" @click.self="closeMobileMenu">
+      <div class="drawer_panel">
+        <div class="drawer_link" @click="linkHref('/models'); closeMobileMenu()">{{ $t("meau.nav1") }}</div>
+        <div class="drawer_link" @click="linkHref('/x402-skills'); closeMobileMenu()">{{ $t("meau.nav10") }}</div>
+        <div class="drawer_link" @click="linkHref('/miners'); closeMobileMenu()">{{ $t("meau.nav2") }}</div>
+        <div class="drawer_link" @click="linkHref('/creator'); closeMobileMenu()">{{ $t("meau.nav4") }}</div>
+        <div class="drawer_link" @click="linkHref('/blog'); closeMobileMenu()">{{ $t("meau.nav5") }}</div>
+        <div class="drawer_divider"></div>
+        <div class="drawer_link" @click="jump('https://github.com/HPVideoLAB'); closeMobileMenu()">GitHub</div>
+        <div class="drawer_link" @click="linkHref('/contact'); closeMobileMenu()">Contact</div>
+        <div class="drawer_lan">
+          <div class="drawer_lan_li" @click="handleCommand('en'); closeMobileMenu()">English</div>
+          <div class="drawer_lan_li" @click="handleCommand('zh'); closeMobileMenu()">简体中文</div>
+          <div class="drawer_lan_li" @click="handleCommand('ko'); closeMobileMenu()">한국어</div>
+          <div class="drawer_lan_li" @click="handleCommand('ja'); closeMobileMenu()">日本語</div>
         </div>
       </div>
     </div>
@@ -109,11 +144,26 @@
         window.open(el, '_blank')
       }
       const search_show = ref(false)
+      // Mobile hamburger drawer state. Closed by default; toggles
+      // on logo-bar tap on small viewports. Closed automatically on
+      // route change so a tap on a nav link doesn't leave the drawer
+      // open over the new page.
+      const showMobileMenu = ref(false)
+      const toggleMobileMenu = () => {
+        showMobileMenu.value = !showMobileMenu.value
+      }
+      const closeMobileMenu = () => {
+        showMobileMenu.value = false
+      }
       onMounted(() => {
         text.value = lanObj[lan.value]
       });
       watch(lan, (newValue) => {
-        
+
+      })
+      // Close the drawer on any route change.
+      watch(() => route.path, () => {
+        showMobileMenu.value = false
       })
       return {
         lan,
@@ -124,6 +174,9 @@
         linkHref,
         search_show,
         handleCommand,
+        showMobileMenu,
+        toggleMobileMenu,
+        closeMobileMenu,
       };
     }
   })
@@ -376,6 +429,98 @@
         }
       }
     }
+  }
+}
+
+/* Hamburger toggle: hidden on desktop, shown below 1200px. App.vue's
+   global @media (max-width:1199px) override already collapses the
+   inline desktop nav links; this button reveals them on demand. */
+.hamburger {
+  display: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  position: relative;
+}
+.hamburger span {
+  display: block;
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  height: 2px;
+  background: #fff;
+  border-radius: 1px;
+  transition: transform 0.2s ease, opacity 0.2s ease, top 0.2s ease;
+}
+.hamburger span:nth-child(1) { top: 11px; }
+.hamburger span:nth-child(2) { top: 17px; }
+.hamburger span:nth-child(3) { top: 23px; }
+.hamburger.open span:nth-child(1) { top: 17px; transform: rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { top: 17px; transform: rotate(-45deg); }
+
+.mobile_drawer {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+}
+.mobile_drawer .drawer_panel {
+  background: #0a0014;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.mobile_drawer .drawer_link {
+  color: #fff;
+  font-size: 16px;
+  padding: 14px 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.mobile_drawer .drawer_link:hover,
+.mobile_drawer .drawer_link:active {
+  background: rgba(153, 3, 230, 0.18);
+}
+.mobile_drawer .drawer_divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 8px 0;
+}
+.mobile_drawer .drawer_lan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.mobile_drawer .drawer_lan_li {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1199px) {
+  .hamburger {
+    display: block;
+  }
+  .mobile_drawer {
+    display: block;
   }
 }
 </style>
