@@ -63,7 +63,16 @@
   #app .page_cont,
   #app .content,
   #app .footer_cont,
-  #app .menu_cont {
+  #app .menu_cont,
+  /* Iter 2: footers and feature lists were still forcing horizontal
+     scroll on mobile because each had its own hardcoded min-width
+     1200px / 420px outside the allow-list above. */
+  #app .footer,
+  #app .footer_legal,
+  #app .footer_bottom,
+  #app .feature-list,
+  #app [class*="container"],
+  #app [class*="wrapper"] {
     min-width: 0 !important;
     width: 100% !important;
     max-width: 100vw;
@@ -71,6 +80,22 @@
   }
   #app * {
     max-width: 100vw;
+  }
+  /* Tap-target floor: any clickable that had no explicit height above
+     was rendering at 16-24px (e.g. the Pricing/Privacy/Terms footer
+     row) — well below the 44px iOS minimum. Bump everything that
+     functions as a button/link in flow content. */
+  #app a,
+  #app button {
+    min-height: 32px;
+  }
+  #app .footer a,
+  #app .footer_legal a,
+  #app .footer_bottom a {
+    display: inline-block;
+    padding: 8px 6px;
+    min-height: 44px;
+    line-height: 28px;
   }
 }
 
