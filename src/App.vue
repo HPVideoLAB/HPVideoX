@@ -102,7 +102,11 @@
      Force wrap so e.g. "Medium" stops rendering as "Mediu". */
   #app .footer_cont,
   #app .footer_legal,
-  #app .footer_bottom {
+  #app .footer_bottom,
+  #app .link_meau,
+  #app .right_btn,
+  #app .bottom_left,
+  #app .bottom_right {
     flex-wrap: wrap !important;
     gap: 12px !important;
     justify-content: flex-start !important;
