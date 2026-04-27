@@ -464,14 +464,21 @@
 
 .mobile_drawer {
   display: none;
+  /* `position: fixed` is normally anchored to the viewport, but the
+     parent `.meau` uses `backdrop-filter`, which creates a new
+     containing block — so top/bottom/left/right would resolve against
+     the 60px-tall navbar and the drawer collapses to height:0.
+     Use explicit width/height instead so the drawer paints regardless
+     of which ancestor is the containing block. */
   position: fixed;
   top: 60px;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100vw;
+  height: calc(100vh - 60px);
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
   z-index: 999;
+  overflow-y: auto;
 }
 .mobile_drawer .drawer_panel {
   background: #0a0014;
