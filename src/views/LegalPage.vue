@@ -51,17 +51,26 @@
 .legal-hero {
   background: linear-gradient(135deg, #c213f2 0%, #8a2ce6 100%);
   color: white;
-  padding: 80px 20px 40px;
+  /* Top padding clears the 114px tall fixed navbar that has
+     backdrop-filter: blur(6px). Earlier 80px caused the H1 to render
+     UNDER the navbar's blur, leaving the page title blurred and
+     unreadable on every legal page. */
+  padding: 140px 20px 60px;
   text-align: center;
 }
 .legal-hero h1 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 800;
   margin: 0 0 8px;
+  /* Belt-and-suspenders against any leftover blur stacking. */
+  position: relative;
+  z-index: 2;
 }
 .legal-hero .updated {
   opacity: 0.85;
   font-size: 13px;
+  position: relative;
+  z-index: 2;
 }
 .legal-body {
   max-width: 800px;
