@@ -111,6 +111,33 @@
     gap: 12px !important;
     justify-content: flex-start !important;
   }
+  /* Top nav (Meau.vue): the desktop layout has 5 nav links + 3 connect
+     items + lang selector + Contact button — total scrollWidth ~966px
+     and Contact lands at x=658 (off-screen). The component itself has
+     no mobile breakpoint. Until a real hamburger menu lands, collapse
+     the nav links + non-essential right-side items on mobile, keep
+     just logo + Contact (so the page is at least usable). */
+  #app .top_fixed .meau .content > .meau,
+  #app .top_fixed .connect_icon,
+  #app .top_fixed .connect_lan {
+    display: none !important;
+  }
+  #app .top_fixed .connect {
+    padding: 4px !important;
+    background: transparent !important;
+  }
+  #app .top_fixed .connect_wallet {
+    margin-right: 0 !important;
+    padding: 8px 14px !important;
+    font-size: 14px !important;
+  }
+  #app .top_fixed .logo,
+  #app .top_fixed .logo img {
+    width: 140px !important;
+  }
+  #app .top_fixed .meau {
+    height: 60px !important;
+  }
 }
 
 body, p, div, span, li {
