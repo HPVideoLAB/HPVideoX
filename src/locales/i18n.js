@@ -1,21 +1,24 @@
-import { createI18n } from 'vue-i18n' 
+import { createI18n } from 'vue-i18n'
 import messages from './index'
+
+// Default to English so US/EU paid traffic doesn't land on a Korean
+// homepage. Korean is still respected when the browser explicitly
+// asks for it; everything else falls back to English.
 let browserlanguage = (
-  (navigator.language ? navigator.language : navigator.userLanguage) || "ko"
+  (navigator.language ? navigator.language : navigator.userLanguage) || 'en'
 ).toLowerCase();
-let language = browserlanguage.split("-")[0]
-if ( language == 'en'|| language == 'ko') {
-  language = language
+let language = browserlanguage.split('-')[0];
+if (language === 'en' || language === 'ko') {
+  language = language;
 } else {
-  language = 'ko'
+  language = 'en';
 }
-console.log(language, 'language');
 const i18n = createI18n({
-  fallbackLocale: 'ko',
+  fallbackLocale: 'en',
   globalInjection: true,
-  legacy: false, // you must specify 'legacy: false' option
-  locale: localStorage.getItem('lan') || language || "ko",
-  messages
+  legacy: false,
+  locale: localStorage.getItem('lan') || language || 'en',
+  messages,
 });
 
 export const changeLan = (lan)=>{
