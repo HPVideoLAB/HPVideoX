@@ -26,8 +26,10 @@
         <div class="search_btn btn" @click="linkHref('/creator')">{{ $t("meau.nav9") }}</div>
       </div>
       <div class="connect" v-else>
-        <!-- <div class="connect_wallet">Contact</div> -->
-        <a class="connect_wallet" href="mailto:creator@hpvideo.io">Contact</a>
+        <!-- Contact button now points to the proper /contact page so the
+             header link works without a mailto: client. mailto fallback
+             still available in the page itself. -->
+        <a class="connect_wallet" href="/contact">Contact</a>
         <div class="connect_icon" @click="jump('https://github.com/HPVideoLAB')">
           <div class="icon github"></div>
         </div>

@@ -22,6 +22,16 @@
         </div>
       </div>
     </div>
+    <!-- Legal / pricing links — required for ad-platform approval and
+         general trust on the bottom rail. Plain anchors so they work
+         even before the SPA hydrates (SEO + crawler friendly). -->
+    <div class="footer_legal">
+      <a href="/pricing">Pricing</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      <a href="/refund">Refund</a>
+      <a href="/contact">Contact</a>
+    </div>
     <div class="footer_bottom">
       <div class="bottom_left">
         <span class="icon"></span>
@@ -169,6 +179,27 @@
           }
         }
       }
+    }
+  }
+  .footer_legal {
+    width: 90%;
+    margin: auto;
+    padding: 16px 0 4px;
+    min-width: 1200px;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    a {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 13px;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: #fff;
+      text-decoration: underline;
     }
   }
   .footer_bottom {

@@ -40,6 +40,38 @@ const routes = [
     name: 'blogInfo',
     component: () => import('@/views/blogInfo.vue')
   },
+  // Legal / pricing pages — required by Meta and Google ad approval.
+  // All five share /views/LegalPage.vue + content from /src/legal/content.js.
+  {
+    path: '/privacy',
+    name: 'privacy',
+    component: () => import('@/views/LegalPage.vue'),
+    props: { pageKey: 'privacy' },
+  },
+  {
+    path: '/terms',
+    name: 'terms',
+    component: () => import('@/views/LegalPage.vue'),
+    props: { pageKey: 'terms' },
+  },
+  {
+    path: '/refund',
+    name: 'refund',
+    component: () => import('@/views/LegalPage.vue'),
+    props: { pageKey: 'refund' },
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: () => import('@/views/LegalPage.vue'),
+    props: { pageKey: 'contact' },
+  },
+  {
+    path: '/pricing',
+    name: 'pricing',
+    component: () => import('@/views/LegalPage.vue'),
+    props: { pageKey: 'pricing' },
+  },
   {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
