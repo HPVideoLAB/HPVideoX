@@ -97,6 +97,16 @@
     min-height: 44px;
     line-height: 28px;
   }
+  /* Footer rows are flex layouts sized for desktop. On mobile their
+     children sum to ~587px and get clipped by the parent overflow.
+     Force wrap so e.g. "Medium" stops rendering as "Mediu". */
+  #app .footer_cont,
+  #app .footer_legal,
+  #app .footer_bottom {
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+    justify-content: flex-start !important;
+  }
 }
 
 body, p, div, span, li {
