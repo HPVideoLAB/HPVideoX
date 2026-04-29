@@ -522,7 +522,12 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1199px) {
+/* Match the App.vue mobile-override breakpoint. iPad (768px) was
+   getting the simplified mobile layout but the underlying page is
+   designed for ≥1200px desktop. Letting iPad use the desktop layout
+   (with horizontal scroll) is less ugly than a 12000px-tall single
+   column. Only true phone widths (<768px) get the hamburger. */
+@media screen and (max-width: 767px) {
   .hamburger {
     display: block;
   }

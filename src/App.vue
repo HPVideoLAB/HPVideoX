@@ -53,7 +53,7 @@
  * without touching desktop behaviour.
  * ==============================================================
  */
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   html, body {
     overflow-x: auto;
   }
