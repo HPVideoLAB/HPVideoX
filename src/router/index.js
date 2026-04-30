@@ -67,10 +67,12 @@ const routes = [
     props: { pageKey: 'contact' },
   },
   {
+    // /pricing has its own dedicated component (card grid + cost
+    // table + FAQ) — the LegalPage template was a wall-of-bullets
+    // that didn't convert. Other legal routes still share LegalPage.
     path: '/pricing',
     name: 'pricing',
-    component: () => import('@/views/LegalPage.vue'),
-    props: { pageKey: 'pricing' },
+    component: () => import('@/views/PricingPage.vue'),
   },
   {
     path: '/:pathMatch(.*)*',

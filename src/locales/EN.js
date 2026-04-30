@@ -14,11 +14,11 @@ export default {
   home: {
     cont1: {
       title1: "HPVideo",
-      title2: "Decentralized AI Video Generation Platform on BNB Chain",
-      title3: "HPVideo is a wallet-based decentralized AI video generation platform on BNB Chain, offering fast, low-cost video creation with multiple AI models—no email, no personal data required",
+      title2: "Cinematic AI video. Pay per clip. No subscription.",
+      title3: "9 frontier models. From $0.45 per clip. Wallet sign-in, generate in seconds, download instantly. No email, no personal data, no monthly fee.",
       text1: "10X faster",
       text2: "the Cost",
-      btn: "Create",
+      btn: "Generate Your First Video →",
       model1: {
         text: "Features and Advantages: As an industry benchmark, it is renowned for its deep understanding and simulation capabilities of the physical world. It can generate cinematic videos with complex scenes, coherent characters, and multi-angle shot transitions, especially excelling in maintaining the movement of objects in accordance with realistic physical laws.",
         tips: "A cinematic trailer of a majestic woolly mammoth emerging from a misty, snowy forest in the Arctic, its long fur swaying realistically as it breathes out clouds of steam in the golden hour light, shot with a dynamic camera movement."
@@ -235,9 +235,9 @@ export default {
     }
   },
   models: {
-    title: "HPVideo",
-    text1: "HPVideo is a pioneering decentralized platform for AI-powered video generation. It utilizes a distributed network to ensure powerful, trustworthy, and efficient creation. Users can easily transform text prompts into high-quality, frame-by-frame visual motion. The platform guarantees authentic ownership, protecting your creativity with timestamped verification and a transparent process.",
-    text2: "Furthermore, HPVideo fosters open collective creation, uniting global communities to build upon shared narratives and co-create innovative stories, redefining collaborative digital storytelling.",
+    title: "9 frontier video models, one wallet, one credit balance",
+    text1: "Pick the model that fits your shot. Pay only for the generation. Switch models per clip with no extra accounts. Cheapest model from $0.45, photoreal up to $1.50, agency-grade up to $9.60 per video — all priced live in Studio before you generate.",
+    text2: "Below: each model's strengths, sample prompts, and the kind of output it's best at. All run on the same Studio with the same credits.",
     model1: {
       title: "Wan 2.7",
       text1: "Release: September 24, 2025 (preview version); the 'WAN 2.5 official version' has opened API access and public experience (no official preview for subsequent versions).",

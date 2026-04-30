@@ -62,6 +62,32 @@
         </div>
       </div>
     </header>
+
+    <!-- Factual stats strip — replaces what would otherwise be the
+         "social proof" section. We don't have real testimonial volume
+         to publish yet; instead we surface verifiable product facts
+         (model count, starting price, etc.). -->
+    <div class="stats-strip">
+      <div class="content stats-grid">
+        <div class="stat">
+          <div class="stat-num">9</div>
+          <div class="stat-label">Frontier Video Models</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">$0.45</div>
+          <div class="stat-label">Starting Price / Clip</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">~5s</div>
+          <div class="stat-label">Wallet Sign-in Time</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">0</div>
+          <div class="stat-label">Personal Data Required</div>
+        </div>
+      </div>
+    </div>
+
     <article>
       <div class="content help_with">
         <h2 class="title animation_hide" v-animate="{delay: 0, class:'fadeInUp'}">{{ $t("home.cont2.title") }}</h2>
@@ -2400,6 +2426,52 @@
   background: #000 !important;
   border-radius: 60px !important;
   border: 5px solid rgba(255, 255, 255, .1);
+}
+
+/* Stats strip below the hero — verifiable product facts. */
+.stats-strip {
+  background: linear-gradient(180deg, rgba(194, 19, 242, 0.08) 0%, rgba(0, 0, 0, 0) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 36px 20px;
+}
+.stats-strip .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+.stats-strip .stat-num {
+  font-size: 44px;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(90deg, #c213f2 0%, #fff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+}
+.stats-strip .stat-label {
+  margin-top: 6px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .stats-strip {
+    padding: 28px 16px;
+  }
+  .stats-strip .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .stats-strip .stat-num {
+    font-size: 32px;
+  }
+  .stats-strip .stat-label {
+    font-size: 11px;
+  }
 }
 </style>
 
