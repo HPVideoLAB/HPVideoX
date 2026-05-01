@@ -9,7 +9,8 @@ export default {
     nav7: "Help Center",
     nav8: "Ways to use HPVideo",
     nav9: "Go to HPVideo",
-    nav10: "x402 Skills"
+    nav10: "x402 Skills",
+    nav11: "Canvas"
   },
   home: {
     cont1: {

@@ -25,6 +25,10 @@
         <div class="meau_li" :class="{'active': route.path == '/miners'}" @click="linkHref('/miners')">{{ $t("meau.nav2") }}</div>
         <!-- <div class="meau_li" :class="{'active': route.path == '/learn'}" @click="linkHref('/learn')">{{ $t("meau.nav3") }}</div> -->
         <div class="meau_li" @click="linkHref('/creator')">{{ $t("meau.nav4") }}</div>
+        <div class="meau_li canvas-link" @click="jump('https://www.hpvideo.io/creator/canvas')">
+          {{ $t("meau.nav11") }}
+          <span class="beta-pill">BETA</span>
+        </div>
         <div class="meau_li" :class="{'active': route.path == '/blog'}" @click="linkHref('/blog')">{{ $t("meau.nav5") }}</div>
       </div>
       <div class="search_cont" v-if="route.path == '/learn' || route.path == '/helpcenter'">
@@ -78,6 +82,9 @@
         <div class="drawer_link" @click="linkHref('/x402-skills'); closeMobileMenu()">{{ $t("meau.nav10") }}</div>
         <div class="drawer_link" @click="linkHref('/miners'); closeMobileMenu()">{{ $t("meau.nav2") }}</div>
         <div class="drawer_link" @click="linkHref('/creator'); closeMobileMenu()">{{ $t("meau.nav4") }}</div>
+        <div class="drawer_link drawer_canvas" @click="jump('https://www.hpvideo.io/creator/canvas'); closeMobileMenu()">
+          {{ $t("meau.nav11") }} <span class="beta-pill-mobile">BETA</span>
+        </div>
         <div class="drawer_link" @click="linkHref('/blog'); closeMobileMenu()">{{ $t("meau.nav5") }}</div>
         <div class="drawer_divider"></div>
         <div class="drawer_link" @click="jump('https://github.com/HPVideoLAB'); closeMobileMenu()">GitHub</div>
@@ -227,6 +234,21 @@
         }
         &.active {
           color: #fff;
+        }
+      }
+      .meau_li.canvas-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        .beta-pill {
+          font-size: 10px;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+          padding: 2px 7px;
+          border-radius: 999px;
+          color: #fff;
+          background: linear-gradient(135deg, #c213f2 0%, #8a2ce6 100%);
+          box-shadow: 0 0 8px rgba(194, 19, 242, 0.45);
         }
       }
     }
@@ -501,6 +523,19 @@
 .mobile_drawer .drawer_link:hover,
 .mobile_drawer .drawer_link:active {
   background: rgba(153, 3, 230, 0.18);
+}
+.mobile_drawer .drawer_link.drawer_canvas {
+  gap: 8px;
+}
+.mobile_drawer .beta-pill-mobile {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  color: #fff;
+  background: linear-gradient(135deg, #c213f2 0%, #8a2ce6 100%);
+  box-shadow: 0 0 8px rgba(194, 19, 242, 0.45);
 }
 .mobile_drawer .drawer_divider {
   height: 1px;

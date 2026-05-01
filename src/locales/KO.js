@@ -9,7 +9,8 @@ export default {
     nav7: "도움말 센터",
     nav8: "HPVideo 사용 방법",
     nav9: "HPVideo로 이동",
-    nav10: "x402 Skills"
+    nav10: "x402 Skills",
+    nav11: "캔버스"
   },
   home: {
     cont1: {
