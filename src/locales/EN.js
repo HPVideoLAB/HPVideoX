@@ -14,6 +14,12 @@ export default {
   },
   home: {
     cont1: {
+        modelHH: {
+          text: 'Currently #1 on the WaveSpeed leaderboard. Joint audio + video in a single pass: synced dialogue, ambient sound, and Foley out of the box.',
+          tips: '🥇 Default · #1 leaderboard · audio + lip-sync'
+        },
+        hh_strip_title: 'Now powered by HappyHorse 1.0.',
+        hh_strip_desc: '#1 on the WaveSpeed leaderboard. Native dialogue + lip-sync, 7 languages, 1080p in seconds.',
       title1: "HPVideo",
       title2: "Cinematic AI video. Pay per clip. No subscription.",
       title3: "9 frontier models. From $0.45 per clip. Wallet sign-in, generate in seconds, download instantly. No email, no personal data, no monthly fee.",
@@ -236,6 +242,17 @@ export default {
     }
   },
   models: {
+/* MODELS_HH_MARKER */
+      modelHH: {
+        title: 'HappyHorse 1.0',
+        text1: 'Currently #1 on the WaveSpeed video generation leaderboard (T2V Elo 1333, I2V 1392).',
+        text2: 'A 15B-parameter unified Transformer that joint-denoises video and audio tokens in a single pass — no separate audio model, no post-production dubbing.',
+        text3_1: '🎙 Native synchronized audio: dialogue, ambient sound, Foley effects',
+        text3_2: '👄 Phoneme-level lip-sync at 14.6% WER (industry-leading)',
+        text3_3: '🌏 7 native languages: English, Mandarin, Cantonese, Japanese, Korean, German, French',
+        text3_4: '🎬 Cinematic 720p / 1080p, ~38 seconds per 5-second clip',
+        text4: 'Best for narrative dialogue scenes, talking-head content, multi-language commercials, and any video that needs voice + lip-sync without an extra pipeline.'
+      },
     title: "9 frontier video models, one wallet, one credit balance",
     text1: "Pick the model that fits your shot. Pay only for the generation. Switch models per clip with no extra accounts. Cheapest model from $0.45, photoreal up to $1.50, agency-grade up to $9.60 per video — all priced live in Studio before you generate.",
     text2: "Below: each model's strengths, sample prompts, and the kind of output it's best at. All run on the same Studio with the same credits.",

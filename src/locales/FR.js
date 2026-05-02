@@ -14,6 +14,12 @@ export default {
   },
   home: {
     cont1: {
+        modelHH: {
+          text: 'Actuellement #1 du classement WaveSpeed. Vidéo + audio générés conjointement en une seule passe : dialogue synchronisé, son ambiant, bruitages prêts à l’emploi.',
+          tips: '🥇 Par défaut · #1 du classement · audio + lip-sync'
+        },
+        hh_strip_title: 'Propulsé par HappyHorse 1.0.',
+        hh_strip_desc: '#1 du classement WaveSpeed. Dialogue + lip-sync natifs, 7 langues, 1080p en secondes.',
       title1: "HPVideo",
       title2: "Plateforme décentralisée de génération vidéo par IA sur la blockchain BNB",
       title3: "HPVideo est une plateforme décentralisée de génération vidéo par IA, fonctionnant avec un portefeuille numérique et basée sur la blockchain BNB. Elle permet une création vidéo rapide et économique grâce à de multiples modèles d'IA, sans nécessiter d'adresse e-mail ni de données personnelles",
@@ -236,6 +242,17 @@ export default {
     }
   },
   models: {
+/* MODELS_HH_MARKER */
+      modelHH: {
+        title: 'HappyHorse 1.0',
+        text1: 'Actuellement #1 du classement de génération vidéo WaveSpeed (T2V Elo 1333, I2V 1392).',
+        text2: 'Un Transformer unifié à 15 milliards de paramètres qui débruite ensemble les tokens vidéo et audio en une passe — pas de modèle audio séparé, pas de post-synchronisation.',
+        text3_1: '🎙 Audio synchronisé natif : dialogue, son ambiant, bruitages',
+        text3_2: '👄 Lip-sync au phonème, WER 14,6 % (de pointe)',
+        text3_3: '🌏 7 langues natives : anglais, mandarin, cantonais, japonais, coréen, allemand, français',
+        text3_4: '🎬 720p / 1080p cinématographique, ~38 s pour un plan de 5 s',
+        text4: 'Idéal pour les scènes dialoguées, les talking heads, les pubs multilingues, et toute vidéo nécessitant voix + lip-sync sans pipeline supplémentaire.'
+      },
     title: "HPVideo",
     text1: "HPVideo est une plateforme pionnière de génération vidéo IA décentralisée, qui s’appuie sur un réseau distribué pour offrir une puissance de création fiable et efficace. Les utilisateurs peuvent transformer des prompts texte en images animées de haute qualité, construites image par image.",
     text2: "HPVideo vise également à créer un environnement de co-création ouvert, connectant la communauté mondiale afin de bâtir ensemble des histoires innovantes et des récits partagés.",

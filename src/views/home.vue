@@ -13,6 +13,13 @@
             <h3 class="text animation_hide delay200" v-animate="{delay: 200, class:'fadeInUp'}">
               <p>{{ $t("home.cont1.title3") }}</p>
             </h3>
+            <div class="hh_featured animation_hide delay300" v-animate="{delay: 300, class:'fadeInUp'}">
+              <span class="hh_badge">🥇 #1</span>
+              <span class="hh_text">
+                <strong>{{ $t("home.cont1.hh_strip_title") }}</strong>
+                {{ $t("home.cont1.hh_strip_desc") }}
+              </span>
+            </div>
             <!-- <div class="text animation_hide delay200" v-animate="{delay: 200, class:'fadeInUp'}">
               
             </div> -->
@@ -370,6 +377,13 @@
       const route = useRoute()
       const dialogVisible = ref(false)
       const videoData = ref([
+        {
+          video: 'https://www.youtube.com/embed/M1FhHfY82mY?si=Zh8m_1GZGTQoHBqV',
+          title: "🥇 HAPPYHORSE 1.0",
+          desc: t('home.cont1.modelHH.text'),
+          tips: t('home.cont1.modelHH.tips'),
+          featured: true
+        },
         {
           video: 'https://www.youtube.com/embed/M1FhHfY82mY?si=Zh8m_1GZGTQoHBqV',
           title: "LUMA RAY 2",
@@ -993,6 +1007,13 @@
 
       watch(() => locale.value, (newLan) => {
         videoData.value = [
+          {
+            video: 'https://www.youtube.com/embed/M1FhHfY82mY?si=Zh8m_1GZGTQoHBqV',
+            title: "🥇 HAPPYHORSE 1.0",
+            desc: t('home.cont1.modelHH.text'),
+            tips: t('home.cont1.modelHH.tips'),
+            featured: true
+          },
           {
             video: 'https://www.youtube.com/embed/M1FhHfY82mY?si=Zh8m_1GZGTQoHBqV',
             title: "LUMA RAY 2",
@@ -2504,6 +2525,51 @@
   }
   to {
     --btn_angle: 360deg;
+  }
+}
+
+/* HappyHorse 1.0 featured strip on the homepage hero */
+.hh_featured {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(194, 19, 242, 0.18) 0%, rgba(138, 44, 230, 0.10) 100%);
+  border: 1px solid rgba(194, 19, 242, 0.45);
+  box-shadow: 0 0 18px rgba(194, 19, 242, 0.18);
+  max-width: 720px;
+}
+.hh_featured .hh_badge {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #c213f2 0%, #8a2ce6 100%);
+  color: #fff;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.hh_featured .hh_text {
+  color: #e5e3f0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.hh_featured .hh_text strong {
+  color: #fff;
+  font-weight: 700;
+  margin-right: 6px;
+}
+@media (max-width: 1199px) {
+  .hh_featured {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 14px;
+  }
+  .hh_featured .hh_text {
+    font-size: 13px;
   }
 }
 </style>

@@ -14,6 +14,22 @@
     </header>
     <article>
       <div class="content models_list">
+        <div class="models_li models_li_featured">
+          <div class="models_cont">
+            <div class="model_img img1"></div>
+            <div class="model_badge_top">🥇 #1 ON WAVESPEED LEADERBOARD</div>
+            <div class="model_title">{{ $t("models.modelHH.title") }}</div>
+            <div class="model_text">{{ $t("models.modelHH.text1") }}</div>
+            <div class="model_text">{{ $t("models.modelHH.text2") }}</div>
+            <div class="model_text">
+              <p>{{ $t("models.modelHH.text3_1") }}</p>
+              <p>{{ $t("models.modelHH.text3_2") }}</p>
+              <p>{{ $t("models.modelHH.text3_3") }}</p>
+              <p>{{ $t("models.modelHH.text3_4") }}</p>
+            </div>
+            <div class="model_text">{{ $t("models.modelHH.text4") }}</div>
+          </div>
+        </div>
         <div class="models_li">
           <div class="models_cont">
             <div class="model_img img1"></div>
@@ -387,4 +403,25 @@
   }
 }
 
+/* Featured HappyHorse 1.0 card — purple gradient border + #1 badge */
+.models_li.models_li_featured .models_cont {
+  position: relative;
+  border: 1px solid rgba(194, 19, 242, 0.55) !important;
+  box-shadow: 0 0 28px rgba(194, 19, 242, 0.22), inset 0 0 0 1px rgba(194, 19, 242, 0.12);
+  background: linear-gradient(180deg, rgba(28, 21, 56, 0.88) 0%, rgba(21, 16, 42, 0.88) 100%) !important;
+}
+.models_li.models_li_featured .model_badge_top {
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #c213f2 0%, #8a2ce6 100%);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(194, 19, 242, 0.4);
+  white-space: nowrap;
+}
 </style>
