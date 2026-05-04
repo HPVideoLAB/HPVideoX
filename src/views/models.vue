@@ -424,4 +424,52 @@
   box-shadow: 0 4px 12px rgba(194, 19, 242, 0.4);
   white-space: nowrap;
 }
+
+@media screen and (max-width: 767px) {
+  .models {
+    .content {
+      &.models_page {
+        flex-direction: column;
+        padding: 100px 16px 24px !important;
+        align-items: flex-start;
+        .models_left {
+          width: 100%;
+          height: 220px;
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+        .models_right {
+          width: 100%;
+          .title {
+            font-size: 32px;
+          }
+          .text {
+            font-size: 15px;
+            line-height: 1.5;
+            margin-top: 12px;
+          }
+        }
+      }
+      &.models_list {
+        gap: 16px;
+        padding: 24px 12px 40px !important;
+        margin-bottom: 32px;
+        flex-direction: column;
+        .models_li {
+          width: 100%;
+          padding: 12px;
+          background-size: 100% 100%;
+          .models_cont {
+            padding: 20px 16px;
+            border-radius: 18px;
+            .model_img {
+              width: 120px;
+              height: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 </style>

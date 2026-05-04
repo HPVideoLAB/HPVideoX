@@ -238,6 +238,7 @@
             margin: 0 24px;
             font-size: 24px;
             font-weight: 600;
+            line-height: 1.3;
           }
           .arrow_img {
             width: 44px;
@@ -256,6 +257,56 @@
           font-family: "Outfit";
           vertical-align: middle;
           color: rgba($color: #fff, $alpha: .5);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .faqs {
+    .content {
+      &.faqs_page {
+        padding: 120px 16px 32px !important;
+        .bg {
+          display: none;
+        }
+        .title {
+          font-size: 40px;
+          line-height: 1.1;
+        }
+        .text {
+          font-size: 16px;
+          line-height: 1.4;
+          margin-top: 12px;
+        }
+      }
+      &.faqs_cont {
+        padding: 0 12px;
+        .faq_li {
+          padding: 16px 18px;
+          border-radius: 20px;
+          .li_top {
+            .qa_img {
+              width: 32px;
+              height: 32px;
+              flex-shrink: 0;
+            }
+            .qa_title {
+              font-size: 16px;
+              margin: 0 12px;
+              line-height: 1.3;
+            }
+            .arrow_img {
+              width: 28px;
+              height: 28px;
+              flex-shrink: 0;
+            }
+          }
+          .li_text {
+            font-size: 14px;
+            line-height: 1.5;
+          }
         }
       }
     }

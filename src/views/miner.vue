@@ -243,4 +243,71 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .miner {
+    .content {
+      &.miner_page {
+        height: auto;
+        padding: 100px 16px 32px !important;
+        flex-direction: column;
+        .bg {
+          display: none;
+        }
+        .miner_left {
+          width: 100%;
+          .title {
+            font-size: 32px;
+          }
+          .text {
+            font-size: 15px;
+            line-height: 1.5;
+            margin-top: 12px;
+          }
+          .miner_btn {
+            gap: 12px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+            .btn {
+              font-size: 15px;
+              padding: 12px 20px;
+            }
+          }
+        }
+      }
+      &.miner_cont {
+        height: auto;
+        padding: 32px 12px !important;
+        margin-bottom: 40px;
+        flex-direction: column;
+        gap: 16px;
+        border-radius: 22px;
+        .cont_bg2, .cont_bg3 {
+          display: none;
+        }
+        .miner_left {
+          width: 100%;
+          .title {
+            font-size: 28px;
+            line-height: 1.2;
+          }
+        }
+        .miner_right {
+          width: 100%;
+          .right_cont {
+            padding: 18px;
+            border-radius: 18px;
+            .title {
+              font-size: 22px;
+            }
+            .text {
+              font-size: 14px;
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 </style>
