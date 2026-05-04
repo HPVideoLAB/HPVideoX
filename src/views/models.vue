@@ -451,20 +451,24 @@
         }
       }
       &.models_list {
-        gap: 16px;
+        gap: 14px;
         padding: 24px 12px 40px !important;
         margin-bottom: 32px;
         flex-direction: column;
         .models_li {
           width: 100%;
-          padding: 12px;
-          background-size: 100% 100%;
+          padding: 0;
+          background: none !important; // hide desktop card-bg img — looks blurry when scaled to 351px
           .models_cont {
-            padding: 20px 16px;
+            padding: 20px 16px 22px;
             border-radius: 18px;
+            background: linear-gradient(180deg, rgba(28, 21, 56, 0.9) 0%, rgba(21, 16, 42, 0.9) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.12);
             .model_img {
-              width: 120px;
-              height: 100px;
+              width: 96px;
+              height: 80px;
+              top: 14px;
+              right: 14px;
             }
           }
         }
