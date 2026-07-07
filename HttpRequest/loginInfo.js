@@ -132,7 +132,7 @@ loginInfo.post('/login', urlEcode, async (request, response ,next) => {
     if (username && password) {
       if (bcrypt.compareSync(username, userInfo.username) && bcrypt.compareSync(password, userInfo.password)) {
         let token = jwt.sign({ username, password }, 'token', {
-          expiresIn: 60*60*2// 授权时效24小时
+          expiresIn: 60*60*24*7// 授权时效 7 天（原为 2 小时，编辑博客途中常过期导致 401 Invalid Token）
         })
         !request.timedout&&response.json({
           code: 10001,
