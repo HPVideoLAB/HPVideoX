@@ -32,6 +32,19 @@ const blacklist = [];
 const mongoURI = "mongodb://deeplink:DeepLinkGlobal2023@8.219.11.151:27017,8.214.76.106:27017,8.214.55.62:27017/test1?replicaSet=deeplink"
 const mongoURI1 = process.env.MONGODB_ROUTER_URI || "mongodb://hpvideo:hpvideo2015@localhost:27019"
 
+// Shared, pooled MongoDB client. Previously every request opened a fresh
+// MongoClient.connect() and closed it — slow, and under load it exhausts
+// connections and can hang past the 20s timeout (silent failure). Connect
+// once at startup and reuse the pool. The driver auto-reconnects.
+const sharedClient = new MongoClient(mongoURI1, { useUnifiedTopology: true, maxPoolSize: 20 });
+let mongoReady = sharedClient.connect()
+  .then(() => console.log('MongoDB 连接池就绪'))
+  .catch((err) => console.error('MongoDB 连接池初始化失败:', err.message));
+async function getDb() {
+  try { await mongoReady; } catch (e) {}
+  return sharedClient.db("hpvideo");
+}
+
 // 设置 Multer 以处理文件上传
 // const storage = multer.diskStorage({
 //   destination: function (req, file, cb) {
@@ -177,10 +190,8 @@ function authenticate(req, res, next) {
 loginInfo.get('/getCategories', async (request, response ,next) => {
   let conn = null;
   try {
-    if (conn == null) {
-      conn = await MongoClient.connect(mongoURI1, { useUnifiedTopology: true })
-    }
-    const hpvideo = await conn.db("hpvideo").collection("blog_categories")
+    const db = await getDb()
+    const hpvideo = await db.collection("blog_categories")
     const categoryData = await hpvideo.find({}).toArray()
     !request.timedout&&response.json({
       success: true,
@@ -214,15 +225,15 @@ loginInfo.get('/getCategories', async (request, response ,next) => {
 loginInfo.post('/addBlog', urlEcode, uploadImg, authenticate, async (req, res) => {
   try {
     // 连接到 MongoDB
-    const conn = await MongoClient.connect(mongoURI1, { useUnifiedTopology: true })
+    const db = await getDb()
     // 从请求中获取其他字段
     const { title, link_url, description, category, date, editor_content } = req.body
     if (title&&link_url&&description&&category&&date&&editor_content) {
-      const collection = await conn.db("hpvideo").collection("blog_list")
+      const collection = await db.collection("blog_list")
       const timestamp = + new Date(date)
       if (req.body.img_url) delete req.body.img_url
       await collection.insertOne({...req.body, img_file: (req.files && req.files['img_file'] && req.files['img_file'][0]) ? req.files['img_file'][0].filename : (req.body.img_file || ''), timestamp: timestamp})
-      conn.close();
+      // pooled client — no per-request close
       !req.timedout&&res.json({
         success: true,
         code: 1,
@@ -249,11 +260,11 @@ loginInfo.post('/addBlog', urlEcode, uploadImg, authenticate, async (req, res) =
 loginInfo.post('/editBlog', urlEcode, uploadImg, authenticate, async (req, res) => {
   try {
     // 连接到 MongoDB
-    const conn = await MongoClient.connect(mongoURI1, { useUnifiedTopology: true })
+    const db = await getDb()
     // 从请求中获取其他字段
     const { id, title, link_url, img_alt, description, category, date, editor_content } = req.body
     if (id&&title&&link_url&&category&&date&&editor_content) {
-      const collection = await conn.db("hpvideo").collection("blog_list")
+      const collection = await db.collection("blog_list")
       let data = {
         title: title, 
         link_url: link_url,
@@ -269,7 +280,7 @@ loginInfo.post('/editBlog', urlEcode, uploadImg, authenticate, async (req, res) 
         data.img_file = req.files['img_file'][0].filename
       }
       await collection.updateOne({_id: new ObjectId(id)}, {$set: data})
-      conn.close();
+      // pooled client — no per-request close
       !req.timedout&&res.json({
         success: true,
         code: 1,
@@ -296,13 +307,13 @@ loginInfo.post('/editBlog', urlEcode, uploadImg, authenticate, async (req, res) 
 loginInfo.post('/deleteBlog', urlEcode, authenticate, async (req, res) => {
   try {
     // 连接到 MongoDB
-    const conn = await MongoClient.connect(mongoURI1, { useUnifiedTopology: true })
+    const db = await getDb()
     // 从请求中获取其他字段
     const { id } = req.body
     if (id) {
-      const collection = await conn.db("hpvideo").collection("blog_list")
+      const collection = await db.collection("blog_list")
       await collection.deleteOne({_id: new ObjectId(id)})
-      conn.close();
+      // pooled client — no per-request close
       !req.timedout&&res.json({
         success: true,
         code: 1,
@@ -329,20 +340,20 @@ loginInfo.post('/deleteBlog', urlEcode, authenticate, async (req, res) => {
 loginInfo.post('/getList', urlEcode, async (req, res) => {
   try {
     // 连接到 MongoDB
-    const conn = await MongoClient.connect(mongoURI1, { useUnifiedTopology: true })
+    const db = await getDb()
     // 从请求中获取其他字段
     const { size, current, category } = req.body
     let pageSize = size?parseInt(size):20
     let pageNum = current?parseInt(current):1
     let perams= [pageSize*(pageNum - 1), pageSize]
-    const collection = await conn.db("hpvideo").collection("blog_list")
+    const collection = await db.collection("blog_list")
     let reqData = {}
     if (category !== '') {
       reqData.category = category
     }
     const Total = await collection.find(reqData).toArray()
     const list = await collection.aggregate([{ $sort: {timestamp: -1} }, {$match: reqData}, {$skip: perams[0]}, {$limit: perams[1]}]).toArray()
-    conn.close();
+      // pooled client — no per-request close
     !req.timedout&&res.json({
       success: true,
       code: 1,
@@ -366,12 +377,12 @@ loginInfo.post('/getList', urlEcode, async (req, res) => {
 loginInfo.post('/getBlogInfo', urlEcode, async (req, res) => {
   try {
     // 连接到 MongoDB
-    const conn = await MongoClient.connect(mongoURI1, { useUnifiedTopology: true })
+    const db = await getDb()
     // 从请求中获取其他字段
     const { link_url } = req.body
-    const collection = await conn.db("hpvideo").collection("blog_list")
+    const collection = await db.collection("blog_list")
     const Info = await collection.find({link_url: link_url}).toArray()
-    conn.close();
+      // pooled client — no per-request close
     !req.timedout&&res.json({
       success: true,
       code: 1,
