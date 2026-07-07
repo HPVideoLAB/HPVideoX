@@ -68,9 +68,13 @@ const storage = multer.diskStorage({
   }
 });
 
-// 文件过滤器
+// 文件过滤器 — accept by mimetype, with an extension fallback so phone
+// photos that arrive as image/heic or application/octet-stream (some
+// browsers/drag-drops) aren't wrongly rejected.
+const IMG_EXT = /\.(jpe?g|png|gif|webp|bmp|heic|heif|avif|svg)$/i;
 const fileFilter = (req, file, cb) => {
-  if (file.mimetype.startsWith('image/')) {
+  const mt = (file.mimetype || '').toLowerCase();
+  if (mt.startsWith('image/') || IMG_EXT.test(file.originalname || '')) {
     cb(null, true);
   } else {
     cb(new Error('只允许上传图片文件！'), false);
@@ -78,10 +82,28 @@ const fileFilter = (req, file, cb) => {
 };
 
 const upload = multer({ storage, fileFilter, limits: {
-  fileSize: 5 * 1024 * 1024, // 5MB per uploaded file
+  fileSize: 25 * 1024 * 1024, // 25MB per uploaded file — phone photos routinely exceed 5MB (was 5MB, which silently 500'd)
   fieldSize: 25 * 1024 * 1024, // 25MB per text field (base64 cover image / rich editor_content) — default 1MB caused MulterError: Field value too long
   fields: 50
 }});
+
+// Wrap multer so its errors become a clean JSON response (and get logged)
+// instead of propagating to Express's default handler as a silent 500 HTML
+// page. Without this, an oversized / wrong-mimetype file failed with no log
+// and no useful message to the admin. Use this in place of
+// `upload.fields([{ name: 'img_file' }])` on the blog routes.
+const uploadImg = (req, res, next) => {
+  upload.fields([{ name: 'img_file' }])(req, res, (err) => {
+    if (err) {
+      console.error('图片上传中间件错误:', err.code || '', err.message);
+      const msg = err.code === 'LIMIT_FILE_SIZE'
+        ? '图片超过 25MB 上限，请压缩后重试'
+        : ('图片上传失败: ' + err.message);
+      return res.status(400).json({ success: false, code: -3, msg });
+    }
+    next();
+  });
+};
 
 
 const userInfo = {
@@ -189,7 +211,7 @@ loginInfo.get('/getCategories', async (request, response ,next) => {
 })
 
 // 新增博客内容
-loginInfo.post('/addBlog', urlEcode, upload.fields([{ name: 'img_file' }]), authenticate, async (req, res) => {
+loginInfo.post('/addBlog', urlEcode, uploadImg, authenticate, async (req, res) => {
   try {
     // 连接到 MongoDB
     const conn = await MongoClient.connect(mongoURI1, { useUnifiedTopology: true })
@@ -199,7 +221,7 @@ loginInfo.post('/addBlog', urlEcode, upload.fields([{ name: 'img_file' }]), auth
       const collection = await conn.db("hpvideo").collection("blog_list")
       const timestamp = + new Date(date)
       if (req.body.img_url) delete req.body.img_url
-      await collection.insertOne({...req.body, img_file: req.files['img_file'][0].filename, timestamp: timestamp})
+      await collection.insertOne({...req.body, img_file: (req.files && req.files['img_file'] && req.files['img_file'][0]) ? req.files['img_file'][0].filename : (req.body.img_file || ''), timestamp: timestamp})
       conn.close();
       !req.timedout&&res.json({
         success: true,
@@ -224,7 +246,7 @@ loginInfo.post('/addBlog', urlEcode, upload.fields([{ name: 'img_file' }]), auth
 });
 
 // 编辑博客内容
-loginInfo.post('/editBlog', urlEcode, upload.fields([{ name: 'img_file' }]), authenticate, async (req, res) => {
+loginInfo.post('/editBlog', urlEcode, uploadImg, authenticate, async (req, res) => {
   try {
     // 连接到 MongoDB
     const conn = await MongoClient.connect(mongoURI1, { useUnifiedTopology: true })
