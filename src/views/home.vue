@@ -2499,28 +2499,31 @@
      (big "HPVideo" wordmark + tagline + long paragraph) overflows the
      viewport, and centering pushes the top of it UP under the blurred
      fixed nav — that's the "HPVideo overlaps the nav" bug. Let the hero
-     grow with its content and top-align it below the nav instead. */
+     grow with its content and top-align it below the nav instead.
+     !important is required because the scoped SCSS rules for these
+     elements are deeply nested (.cont1 .home_left .title[data-v]) and
+     out-specify a flat global override otherwise. */
   .home .content.home_page {
-    height: auto;
-    min-height: 100vh;
-    justify-content: flex-start;
-    padding: 96px 0 48px;
+    height: auto !important;
+    min-height: 100vh !important;
+    justify-content: flex-start !important;
+    padding: 96px 0 48px !important;
   }
   .home .content.home_page .cont1 {
-    flex-direction: column;
+    flex-direction: column !important;
   }
   .home .content.home_page .home_left .title {
-    font-size: 30px;
-    margin-bottom: 18px;
+    font-size: 30px !important;
+    margin-bottom: 18px !important;
   }
   .home .content.home_page .home_left .title1 {
-    font-size: 34px;
-    line-height: 1.15;
-    margin-bottom: 4px;
+    font-size: 34px !important;
+    line-height: 1.15 !important;
+    margin-bottom: 4px !important;
   }
   /* Oversized decorative glow bleeds over the title on narrow screens. */
   .home .content.home_page .bg1 {
-    display: none;
+    display: none !important;
   }
 }
 </style>
