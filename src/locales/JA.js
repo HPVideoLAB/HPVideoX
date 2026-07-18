@@ -10,7 +10,8 @@ export default {
     nav8: "HPVideo の使い方",
     nav9: "HPVideo へ移動",
     nav10: "x402 Skills",
-    nav11: "キャンバス"
+    nav11: "キャンバス",
+    nav12: "ディレクター"
   },
   home: {
     cont1: {

@@ -10,7 +10,8 @@ export default {
     nav8: "HPVideo 사용 방법",
     nav9: "HPVideo로 이동",
     nav10: "x402 Skills",
-    nav11: "캔버스"
+    nav11: "캔버스",
+    nav12: "디렉터 모드"
   },
   home: {
     cont1: {

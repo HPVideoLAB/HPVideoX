@@ -2493,6 +2493,35 @@
   .stats-strip .stat-label {
     font-size: 11px;
   }
+
+  /* Mobile hero: the desktop hero is `height:100vh; min-height:880px`
+     with vertically-centered content. On a phone the tall content
+     (big "HPVideo" wordmark + tagline + long paragraph) overflows the
+     viewport, and centering pushes the top of it UP under the blurred
+     fixed nav — that's the "HPVideo overlaps the nav" bug. Let the hero
+     grow with its content and top-align it below the nav instead. */
+  .home .content.home_page {
+    height: auto;
+    min-height: 100vh;
+    justify-content: flex-start;
+    padding: 96px 0 48px;
+  }
+  .home .content.home_page .cont1 {
+    flex-direction: column;
+  }
+  .home .content.home_page .home_left .title {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+  .home .content.home_page .home_left .title1 {
+    font-size: 34px;
+    line-height: 1.15;
+    margin-bottom: 4px;
+  }
+  /* Oversized decorative glow bleeds over the title on narrow screens. */
+  .home .content.home_page .bg1 {
+    display: none;
+  }
 }
 </style>
 

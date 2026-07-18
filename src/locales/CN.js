@@ -10,7 +10,8 @@ export default {
     nav8: "HPVideo 的使用方式",
     nav9: "前往 HPVideo",
     nav10: "x402 Skills",
-    nav11: "无限画布"
+    nav11: "无限画布",
+    nav12: "导演模式"
   },
   home: {
     cont1: {

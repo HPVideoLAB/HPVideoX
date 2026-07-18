@@ -29,6 +29,10 @@
           {{ $t("meau.nav11") }}
           <span class="beta-pill">BETA</span>
         </div>
+        <div class="meau_li canvas-link" @click="jump('https://www.hpvideo.io/creator/director')">
+          {{ $t("meau.nav12") }}
+          <span class="beta-pill new-pill">NEW</span>
+        </div>
         <div class="meau_li" :class="{'active': route.path == '/blog'}" @click="linkHref('/blog')">{{ $t("meau.nav5") }}</div>
       </div>
       <div class="search_cont" v-if="route.path == '/learn' || route.path == '/helpcenter'">
@@ -84,6 +88,9 @@
         <div class="drawer_link" @click="linkHref('/creator'); closeMobileMenu()">{{ $t("meau.nav4") }}</div>
         <div class="drawer_link drawer_canvas" @click="jump('https://www.hpvideo.io/creator/canvas'); closeMobileMenu()">
           {{ $t("meau.nav11") }} <span class="beta-pill-mobile">BETA</span>
+        </div>
+        <div class="drawer_link drawer_canvas" @click="jump('https://www.hpvideo.io/creator/director'); closeMobileMenu()">
+          {{ $t("meau.nav12") }} <span class="beta-pill-mobile new-pill">NEW</span>
         </div>
         <div class="drawer_link" @click="linkHref('/blog'); closeMobileMenu()">{{ $t("meau.nav5") }}</div>
         <div class="drawer_divider"></div>
@@ -249,6 +256,10 @@
           color: #fff;
           background: linear-gradient(135deg, #c213f2 0%, #8a2ce6 100%);
           box-shadow: 0 0 8px rgba(194, 19, 242, 0.45);
+        }
+        .beta-pill.new-pill {
+          background: linear-gradient(135deg, #ff8a00 0%, #ff4d4d 100%);
+          box-shadow: 0 0 8px rgba(255, 96, 64, 0.5);
         }
       }
     }
@@ -536,6 +547,10 @@
   color: #fff;
   background: linear-gradient(135deg, #c213f2 0%, #8a2ce6 100%);
   box-shadow: 0 0 8px rgba(194, 19, 242, 0.45);
+}
+.mobile_drawer .beta-pill-mobile.new-pill {
+  background: linear-gradient(135deg, #ff8a00 0%, #ff4d4d 100%);
+  box-shadow: 0 0 8px rgba(255, 96, 64, 0.5);
 }
 .mobile_drawer .drawer_divider {
   height: 1px;
