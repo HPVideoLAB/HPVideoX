@@ -237,8 +237,8 @@ export default {
       },
       li9: {
         title: "Luma Ray 2",
-        text1: "Release: February 2024 (preview); 'SORA 2' not officially announced (likely speculative versioning).",
-        text2: "Developer: OpenAI (U.S.-based AI research lab).",
+        text1: "Release: 2025 (successor to Ray 1 on the Dream Machine platform); available on WaveSpeed with no official 'Ray 3' timeline as of now.",
+        text2: "Developer: Luma AI (U.S.-based research lab behind Dream Machine).",
       }
     }
   },
@@ -342,13 +342,23 @@ export default {
     },
     model9: {
       title: "Luma Ray 2",
-      text1: "Release: February 2024 (preview); 'SORA 2' not officially announced (likely speculative versioning).",
-      text2: "Developer: OpenAI (U.S.-based AI research lab).",
+      text1: "Release: 2025 (successor to Ray 1 on the Dream Machine platform); available on WaveSpeed with no official 'Ray 3' timeline as of now.",
+      text2: "Developer: Luma AI (U.S.-based research lab behind Dream Machine).",
       text3_1: "Features:",
-      text3_2: "Generates hyper-realistic 60-second+ videos from text prompts.",
-      text3_3: "Employs physics-based simulation (e.g., fluid dynamics, object interactions) and coherent long-form storytelling.",
-      text3_4: "Supports diverse scenes (urban landscapes, human actions, natural phenomena).",
-      text4: "Output: High-resolution video (up to 1080p) with temporal consistency and detailed textures."
+      text3_2: "Generates fast, hyper-realistic video from text and image prompts with large, natural, coherent motion.",
+      text3_3: "Strong physical realism (fluid dynamics, object interactions) and cinematic camera moves, with image-to-video and keyframe control.",
+      text3_4: "Tuned for smooth, production-ready motion — good for cinematic b-roll, product shots, and stylised sequences.",
+      text4: "Output: high-resolution video (up to 1080p) with strong temporal consistency and detailed textures."
+    },
+    model10: {
+      title: "Vidu Q3",
+      text1: "Release: December 2025 (public API on WaveSpeed); the Q-series successor to Vidu 1.5, with no official 'Q4' timeline as of now.",
+      text2: "Developer: Shengshu Technology (China-based AI lab spun out of Tsinghua University, creators of the Vidu video model).",
+      text3_1: "Features:",
+      text3_2: "Generates 4- to 8-second videos from text or image prompts with fast turnaround and strong prompt adherence.",
+      text3_3: "Specialises in smooth, physically-plausible motion and consistent character identity across a shot, with a distinctive stylised/anime range alongside photoreal output.",
+      text3_4: "Cost-efficient tier ($0.40 for 4s, $0.80 for 8s) — a strong default for rapid ideation, storyboard drafts, and multi-shot sequences.",
+      text4: "Output: high-consistency video up to 1080p with reliable subject identity, well-suited to character-driven shorts and animation."
     },
     // model10: {
     //   title: "PIXVERSE V4.5 (Pixverse Technologies)",
@@ -388,7 +398,7 @@ export default {
     // },
   },
   miners: {
-    text1: "To participate in GPU mining, you need to hold an NFT node.Mining rewards starts 3-6 months after listing on the DEX.",
+    text1: "To participate in GPU mining, you need to hold an NFT node. Mining rewards start 3-6 months after listing on the DEX.",
     text2: "5 billion HPC tokens are mined annually. 10% of the mining rewards unlock immediately, and the rest follow a 180 day linear unlocking schedule.",
     text3: "Machines connected to the network can earn HPC rewards for each successful text-to-video request, but the video generation must be completed within 20 blocks (approximately 60 seconds); otherwise, it is invalid.",
     btn1: "Buy HPC",
@@ -411,7 +421,7 @@ export default {
   },
   help: {
     title: "AI Video Generation, Reinvented",
-    text: "Ten state-of-the-art AI models unified in one platform, powered by decentralized GPU compute.",
+    text: "Eleven state-of-the-art AI models unified in one platform, powered by decentralized GPU compute.",
     btn1: "Try now",
     btn2: "See Docs",
     title1: "All the resources you need to make anything you want",
@@ -514,6 +524,6 @@ export default {
     title1: "Get started with HPVideo",
     btn1: "Try HPVideo",
     btn2: "Watch Demo",
-    footer_bottom: "2025 HPVideo. All Right Researved"
+    footer_bottom: "2026 HPVideo. All Rights Reserved"
   }
 }

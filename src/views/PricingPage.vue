@@ -177,12 +177,16 @@ export default defineComponent({
 
     const costRows = [
       { id: 'ovi', name: 'OVI', note: 'Lifelike characters, fast', duration: '5s', resolution: 'std', price: 0.45, credits: 450 },
-      { id: 'seedance', name: 'Seedance 2.0', note: 'Cheapest, good for ideation', duration: '6s', resolution: 'std', price: 0.60, credits: 600, best: true },
+      { id: 'seedance', name: 'Seedance 2.0', note: 'Great for ideation', duration: '6s', resolution: 'std', price: 0.60, credits: 600 },
       { id: 'hailuo', name: 'Hailuo 2.3', note: 'Strong motion', duration: '6s', resolution: 'std', price: 0.69, credits: 690 },
+      { id: 'vidu', name: 'Vidu Q3', note: 'Fast, consistent characters', duration: '4s', resolution: 'std', price: 0.80, credits: 800 },
+      { id: 'ltx', name: 'LTX 2.3', note: 'Fast social-media clips', duration: '6s', resolution: 'std', price: 1.08, credits: 1080 },
       { id: 'pixverse', name: 'Pixverse V6', note: 'Stylised animation', duration: '5s', resolution: 'std', price: 1.20, credits: 1200 },
+      { id: 'happyhorse', name: 'HappyHorse 1.0', note: '🥇 #1 · native audio + lip-sync', duration: '5s', resolution: '720p', price: 1.50, credits: 1500, best: true },
+      { id: 'luma', name: 'Luma Ray 2', note: 'Cinematic motion', duration: '5s', resolution: 'std', price: 1.50, credits: 1500 },
       { id: 'wan-720', name: 'WAN 2.7', note: 'Photoreal, frontier-tier', duration: '5s', resolution: '720p', price: 1.50, credits: 1500 },
       { id: 'wan-1080', name: 'WAN 2.7', note: 'Photoreal, longer + sharper', duration: '10s', resolution: '1080p', price: 4.50, credits: 4500 },
-      { id: 'kling', name: 'Kling 3.0', note: 'Cinematic motion', duration: '10s', resolution: 'std', price: 8.40, credits: 8400 },
+      { id: 'kling', name: 'Kling 3.0', note: 'Cinematic, high-motion', duration: '10s', resolution: 'std', price: 8.40, credits: 8400 },
       { id: 'veo', name: 'Veo 3.1', note: "Google's flagship, dialogue-aware", duration: '8s', resolution: 'std', price: 9.60, credits: 9600 },
     ];
 

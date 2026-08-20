@@ -77,7 +77,7 @@
     <div class="stats-strip">
       <div class="content stats-grid">
         <div class="stat">
-          <div class="stat-num">9</div>
+          <div class="stat-num">11</div>
           <div class="stat-label">Frontier Video Models</div>
         </div>
         <div class="stat">

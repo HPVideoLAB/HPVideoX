@@ -237,8 +237,8 @@ export default {
       },
       li9: {
         title: "Luma Ray 2",
-        text1: "Date de sortie : février 2024 (aperçu). La version « SORA 2 » n’a pas encore été annoncée officiellement.",
-        text2: "Développeur : OpenAI (laboratoire de recherche en IA basé aux États-Unis)."
+        text1: "Date de sortie : 2025 (successeur de Ray 1 sur la plateforme Dream Machine) ; disponible sur WaveSpeed, sans calendrier officiel pour un « Ray 3 » à ce jour.",
+        text2: "Développeur : Luma AI (laboratoire de recherche américain à l’origine de Dream Machine)."
       }
     }
   },
@@ -342,13 +342,23 @@ export default {
     },
     model9: {
       title: "Luma Ray 2",
-      text1: "Date de sortie : février 2024 (aperçu). Aucune annonce officielle de « SORA 2 » pour l’instant.",
-      text2: "Développeur : OpenAI (laboratoire d’IA américain).",
+      text1: "Date de sortie : 2025 (successeur de Ray 1 sur la plateforme Dream Machine) ; disponible sur WaveSpeed, sans calendrier officiel pour un « Ray 3 » à ce jour.",
+      text2: "Développeur : Luma AI (laboratoire de recherche américain à l’origine de Dream Machine).",
       text3_1: "Points clés :",
-      text3_2: "Génération de vidéos jusqu’à 60 secondes et plus à partir de prompts texte.",
-      text3_3: "Simulation physique réaliste (fluides, interactions d’objets) et support de narrations longues.",
-      text3_4: "Couvre un large éventail de scènes (villes, comportements humains, phénomènes naturels, etc.).",
-      text4: "Sortie : vidéos jusqu’en 1080p, forte cohérence temporelle, textures détaillées."
+      text3_2: "Génère des vidéos rapides et hyper-réalistes à partir de prompts texte et image, avec des mouvements amples, naturels et cohérents.",
+      text3_3: "Fort réalisme physique (dynamique des fluides, interactions entre objets) et mouvements de caméra cinématographiques, avec image-vers-vidéo et contrôle par images clés.",
+      text3_4: "Optimisé pour un mouvement fluide et prêt pour la production — idéal pour le b-roll cinématographique, les plans produit et les séquences stylisées.",
+      text4: "Sortie : vidéo haute résolution (jusqu’à 1080p) avec une forte cohérence temporelle et des textures détaillées."
+    },
+    model10: {
+      title: "Vidu Q3",
+      text1: "Date de sortie : décembre 2025 (API publique sur WaveSpeed) ; successeur de la série Q de Vidu 1.5, sans calendrier officiel pour un « Q4 » à ce jour.",
+      text2: "Développeur : Shengshu Technology (laboratoire d’IA chinois issu de l’université Tsinghua, créateur du modèle vidéo Vidu).",
+      text3_1: "Points clés :",
+      text3_2: "Génère des vidéos de 4 à 8 secondes à partir de prompts texte ou image, avec un rendu rapide et un fort respect du prompt.",
+      text3_3: "Spécialisé dans un mouvement fluide et physiquement plausible et une identité de personnage cohérente tout au long d’un plan, avec un registre stylisé/anime en plus du rendu photoréaliste.",
+      text3_4: "Palier économique (0,40 $ pour 4 s, 0,80 $ pour 8 s) — un excellent choix par défaut pour l’idéation rapide, les ébauches de storyboard et les séquences multi-plans.",
+      text4: "Sortie : vidéo à forte cohérence jusqu’à 1080p avec une identité de sujet fiable, parfaitement adaptée aux courts métrages centrés sur les personnages et à l’animation."
     }
   },
   miners: {
@@ -478,6 +488,6 @@ export default {
     title1: "Commencer avec HPVideo",
     btn1: "Essayer HPVideo",
     btn2: "Voir la démo",
-    footer_bottom: "2025 HPVideo. Tous droits réservés."
+    footer_bottom: "2026 HPVideo. Tous droits réservés."
   }
 }

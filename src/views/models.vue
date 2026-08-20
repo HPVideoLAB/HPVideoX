@@ -168,6 +168,21 @@
             <div class="model_text">{{ $t("models.model9.text4") }}</div>
           </div>
         </div>
+        <div class="models_li">
+          <div class="models_cont">
+            <div class="model_img img2"></div>
+            <div class="model_title">{{ $t("models.model10.title") }}</div>
+            <div class="model_text">{{ $t("models.model10.text1") }}</div>
+            <div class="model_text">{{ $t("models.model10.text2") }}</div>
+            <div class="model_text">
+              <p>{{ $t("models.model10.text3_1") }}</p>
+              <p>{{ $t("models.model10.text3_2") }}</p>
+              <p>{{ $t("models.model10.text3_3") }}</p>
+              <p>{{ $t("models.model10.text3_4") }}</p>
+            </div>
+            <div class="model_text">{{ $t("models.model10.text4") }}</div>
+          </div>
+        </div>
          <!-- <div class="models_li">
           <div class="models_cont">
             <div class="model_img img1"></div>
