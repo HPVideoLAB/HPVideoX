@@ -19,7 +19,7 @@ export default {
           text: 'WaveSpeed 動画生成リーダーボード #1。動画と音声を 1 回のパスで同時生成 — 同期した対話、環境音、フォーリーがそのまま使えます。',
           tips: '🥇 デフォルト · リーダーボード #1 · 音声+リップシンク'
         },
-        hh_strip_title: 'HappyHorse 1.0 を搭載。',
+        hh_strip_title: 'HappyHorse 1.1 を搭載。',
         hh_strip_desc: 'WaveSpeed リーダーボード #1。ネイティブ対話 + リップシンク、7 言語、数秒で 1080p。',
       title1: "HPVideo",
       title2: "BNBチェーン上の分散型AIビデオ生成プラットフォーム",
@@ -216,17 +216,17 @@ export default {
         text2: "開発元: Lightricks（イスラエルに拠点を置くAIクリエイティブツール企業、Facetune/CapCutの競合製品で知られる）。"
       },
       li5: {
-        title: "HAILUO 2.3",
+        title: "MiniMax H3",
         text1: "リリース: 2025年9月30日（エンタープライズパートナー向けクローズドベータ版）；パブリックAPIとウェブデモは2025年11月10日にリリース（現時点では「Hailuo-03」の公式ロードマップは未定）",
         text2: "開発元: Minimax（マルチモーダル生成とエンタープライズAIソリューションを専門とする中国拠点のAIスタートアップ企業）"
       },
       li6: {
-        title: "SEEDANCE 2.0",
+        title: "Seedance 2.5",
         text1: "リリース: 2025年10月12日（ByteDanceエコシステムアプリ向け社内ベータ版）。パブリックREST APIとTikTok Creator Studioとの統合は2025年11月20日に開始（現時点では「V2」の公式発表はありません）。",
         text2: "開発元: ByteDance AI Lab（中国に拠点を置くグローバルテクノロジー企業のR&D部門。マルチモーダル生成と短編コンテンツツールを専門としています。）"
       },
       li7: {
-        title: "KLING V3.0",
+        title: "Kling O3",
         text1: "リリース: 2025年11月5日（開発者向けパブリックベータ版）; エンタープライズAPIアクセスとセルフホスト型デプロイメントオプションは2025年11月22日に開始（現時点では「V3.0」の公式ロードマップは未定）",
         text2: "開発元: Kwaivgi（シンガポールに拠点を置くAIスタートアップ企業。グローバルな開発者エコシステム向けの軽量マルチモーダル生成に注力）。"
       },
@@ -245,7 +245,7 @@ export default {
   models: {
 /* MODELS_HH_MARKER */
       modelHH: {
-        title: 'HappyHorse 1.0',
+        title: 'HappyHorse 1.1',
         text1: 'WaveSpeed 動画生成リーダーボードで現在 #1 (T2V Elo 1333、I2V 1392)。',
         text2: '15B パラメータの統一 Transformer が、動画トークンと音声トークンを一度のパスで同時にノイズ除去 — 別の音声モデルもポストプロのアフレコも不要。',
         text3_1: '🎙 ネイティブ同期音声: 対話、環境音、フォーリー効果',
@@ -298,9 +298,9 @@ export default {
       text4: "出力：720p（30fps）、ソーシャルメディア向け色調最適化済み短尺映像。"
     },
     model5: {
-      title: "HAILUO 2.3",
-      text1: "リリース日：2025年9月30日（クローズドテスト）、11月10日にAPIとWebデモ公開。",
-      text2: "開発元：Minimax（中国AIスタートアップ、多モーダル生成に特化）。",
+      title: "MiniMax H3",
+      text1: "リリース：2026年（WaveSpeed 上の MiniMax H3 — Hailuo シリーズの後継）。Hailuo 2.3 より高速な生成と低コストを実現し、物理的に説得力のある力強い動きが特長です。",
+      text2: "開発元：MiniMax（Hailuo / MiniMax 動画モデルを手がける中国拠点の AI スタートアップ）。",
       text3_1: "機能概要：",
       text3_2: "テキスト・画像・複合入力から12秒間の高一貫性映像を生成。中国語環境に最適化。",
       text3_3: "クラウド-エッジ混合構造（80億パラメータ）、1件の推論が15秒未満。",
@@ -308,8 +308,8 @@ export default {
       text4: "出力：1080p（24fps）、映画レベルの動きと照明、BGM/ナレーション同期。"
     },
     model6: {
-      title: "SEEDANCE 2.0",
-      text1: "リリース日：2025年10月12日（ByteDance内テスト）、11月20日にTikTok Creator Studio API公開。",
+      title: "Seedance 2.5",
+      text1: "リリース：2026年（WaveSpeed 上の ByteDance 製 Seedance 2.5）。テキストからハリウッド級の映画的な映像を生成し、音声と映像をネイティブに同期。480p〜4K、最長 30 秒のクリップに対応します。",
       text2: "開発元：ByteDance AI Lab（グローバルAI研究部門）。",
       text3_1: "機能概要：",
       text3_2: "テキスト入力から10秒動画を生成。TikTokのトレンド（ダンス、商品紹介）に最適化。",
@@ -319,8 +319,8 @@ export default {
       text4: "出力：480p（30fps、9:16/16:9対応）、TikTok最適化色彩、音楽・効果音同期。"
     },
     model7: {
-      title: "KLING V3.0",
-      text1: "リリース日：2025年11月5日（開発者向けテスト）、11月22日企業API・自動ホスティング公開。",
+      title: "Kling O3",
+      text1: "リリース：2026年（WaveSpeed 上の Kuaishou 製 Kling O3、V3.0 の後継）。映画的な動きにオプションの音声同期と高いプロンプト追従性を備え、低い秒単価で利用できます。",
       text2: "開発元：Kwaivgi（シンガポール拠点のAIスタートアップ）。",
       text3_1: "機能概要：",
       text3_2: "テキスト・画像入力で14秒映像を生成、20言語以上のプロンプトに対応。",
@@ -455,7 +455,7 @@ export default {
     },
     qs5: {
       title: "5. どのAIモデルを利用できますか？",
-      text: "WAN 2.7、LUMA RAY 2、OVI、VEO 3.1、LTX 2.3、KLING V3.0、PIXVERSE V6、SEEDANCE 2.0、HAILUO 2.3、VIDU Q3 などをサポートしています。"
+      text: "WAN 2.7、LUMA RAY 2、OVI、VEO 3.1、LTX 2.3、Kling O3、PIXVERSE V6、Seedance 2.5、MiniMax H3、VIDU Q3 などをサポートしています。"
     },
     qs6: {
       title: "6. 動画生成のコストは？",

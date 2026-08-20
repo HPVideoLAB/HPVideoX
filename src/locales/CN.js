@@ -19,7 +19,7 @@ export default {
           text: 'WaveSpeed 视频生成榜单 #1。视频和音频在同一次推理中联合生成：对话、环境音、拟音效果原生同步。',
           tips: '🥇 默认模型 · 榜单第一 · 音频+口型'
         },
-        hh_strip_title: '全新搭载快乐马 1.0。',
+        hh_strip_title: '全新搭载快乐马 1.1。',
         hh_strip_desc: 'WaveSpeed 排行榜 #1。原生对话 + 口型同步，7 种语言，1080p 秒级出片。',
       title1: "HPVideo",
       title2: "基于 BNB 链的去中心化 AI 视频生成平台",
@@ -216,17 +216,17 @@ export default {
         text2: "开发方：Lightricks（以色列的 AI 创意工具公司，以 Facetune/CapCut 竞品而知名）。"
       },
       li5: {
-        title: "HAILUO 2.3",
+        title: "MiniMax H3",
         text1: "发布日期：2025 年 9 月 30 日（面向企业伙伴的封闭测试）；公共 API 和 Web 演示于 2025 年 11 月 10 日上线（目前尚无 “Hailuo-03” 官方路线图）。",
         text2: "开发方：Minimax（中国的 AI 创业公司，专注多模态生成与企业级 AI 解决方案）。"
       },
       li6: {
-        title: "SEEDANCE 2.0",
+        title: "Seedance 2.5",
         text1: "发布日期：2025 年 10 月 12 日（面向字节生态应用的内测版）；公共 REST API 与 TikTok Creator Studio 集成于 2025 年 11 月 20 日上线（截至目前尚无 “V2” 官方公告）。",
         text2: "开发方：字节跳动 AI Lab（中国本土的全球科技公司研发部门，专注多模态生成与短视频内容工具）。"
       },
       li7: {
-        title: "KLING V3.0",
+        title: "Kling O3",
         text1: "发布日期：2025 年 11 月 5 日（面向开发者的公开测试）；企业 API 接入与自部署选项于 2025 年 11 月 22 日上线（目前尚无 “V3.0” 官方路线图）。",
         text2: "开发方：Kwaivgi（总部位于新加坡的 AI 创业公司，专注面向全球开发者生态的轻量级多模态生成）。"
       },
@@ -245,7 +245,7 @@ export default {
   models: {
 /* MODELS_HH_MARKER */
       modelHH: {
-        title: '快乐马 1.0 (HappyHorse 1.0)',
+        title: '快乐马 1.1 (HappyHorse 1.1)',
         text1: 'WaveSpeed 视频生成榜单当前第 1 名 (T2V Elo 1333，I2V 1392)。',
         text2: '15B 参数统一 Transformer 架构，视频与音频 token 在一次前向推理中联合去噪 — 无需独立音频模型，无需后期配音。',
         text3_1: '🎙 原生同步音频：对白、环境音、拟音效果一次生成',
@@ -298,9 +298,9 @@ export default {
       text4: "输出：720p 视频（30fps），运动过渡平滑，色彩经过社交媒体优化，并同步短音频片段。"
     },
     model5: {
-      title: "HAILUO 2.3",
-      text1: "发布日期：2025 年 9 月 30 日（面向企业伙伴的封闭测试）；公共 API 与 Web 演示于 2025 年 11 月 10 日上线（目前尚无 “Hailuo-03” 官方路线图）。",
-      text2: "开发方：Minimax（中国的 AI 创业公司，专注多模态生成与企业级 AI 解决方案）。",
+      title: "MiniMax H3",
+      text1: "发布日期：2026 年（WaveSpeed 上的 MiniMax H3——Hailuo 系列的继任者）。相比 Hailuo 2.3，生成速度更快、成本更低，并具备强劲且符合物理规律的运动表现。",
+      text2: "开发方：MiniMax（总部位于中国的 AI 创业公司，Hailuo / MiniMax 视频模型的开发者）。",
       text3_1: "功能特性：",
       text3_2: "可从文本、图像或图文混合提示生成 12 秒高一致性视频，对中文语境和本地文化场景有增强适配。",
       text3_3: "采用云-边混合架构（80 亿参数），单条视频推理时间小于 15 秒，并支持自定义模板导入（如营销短片、教学内容等）。",
@@ -308,8 +308,8 @@ export default {
       text4: "输出：1080p 视频（24fps），具备电影级运动模糊、真实光影效果，并可同步背景音乐、旁白和环境声，支持 MP4/WEBM 格式，方便跨平台分发。"
     },
     model6: {
-      title: "SEEDANCE 2.0",
-      text1: "发布日期：2025 年 10 月 12 日（字节生态内测）；公共 REST API 与 TikTok Creator Studio 集成于 2025 年 11 月 20 日上线（目前尚无 “V2” 官方公告）。",
+      title: "Seedance 2.5",
+      text1: "发布日期：2026 年（WaveSpeed 上字节跳动的 Seedance 2.5）。可从文本生成好莱坞级电影质感视频，原生音画同步；支持 480p–4K，单条视频时长最长可达 30 秒。",
       text2: "开发方：字节跳动 AI Lab（全球化科技公司的研发部门，专注多模态生成与短内容创作工具）。",
       text3_1: "功能特性：",
       text3_2: "从文本提示生成 10 秒短视频，针对 TikTok 式流行趋势进行优化（如舞蹈挑战、产品展示等）。",
@@ -319,8 +319,8 @@ export default {
       text4: "输出：480p 视频（30fps，支持 9:16/16:9），运动流畅，色彩经过 TikTok 优化，并同步短音频（授权音乐库、旁白、流行音效），支持 MP4/AVC 格式，适配主流社交平台。"
     },
     model7: {
-      title: "KLING V3.0",
-      text1: "发布日期：2025 年 11 月 5 日（面向开发者的公开测试）；企业 API 接入和自托管部署选项于 2025 年 11 月 22 日上线（目前尚无 “V3.0” 官方路线图）。",
+      title: "Kling O3",
+      text1: "发布日期：2026 年（WaveSpeed 上快手的 Kling O3，V3.0 的继任者）。具备电影级运动表现，可选音频同步，并对提示词有出色的还原度——且每秒费率低廉。",
       text2: "开发方：Kwaivgi（总部位于新加坡的 AI 创业公司，专注面向全球开发者生态的轻量级多模态生成）。",
       text3_1: "功能特性：",
       text3_2: "可从文本、图像或图文混合提示中生成 14 秒高保真视频，并支持跨文化场景适配（原生支持 20+ 种语言提示）。",
@@ -455,7 +455,7 @@ export default {
     },
     qs5: {
       title: "5. HPVideo 支持哪些 AI 模型？",
-      text: 'HPVideo 支持 WAN 2.7、LUMA RAY 2、OVI、VEO 3.1、LTX 2.3、KLING V3.0、PIXVERSE V6、SEEDANCE 2.0、HAILUO 2.3、VIDU Q3 等多种模型。每个模型都擅长不同的视觉风格和创作场景。'
+      text: 'HPVideo 支持 WAN 2.7、LUMA RAY 2、OVI、VEO 3.1、LTX 2.3、Kling O3、PIXVERSE V6、Seedance 2.5、MiniMax H3、VIDU Q3 等多种模型。每个模型都擅长不同的视觉风格和创作场景。'
     },
     qs6: {
       title: "6. 生成一段视频需要多少钱？",

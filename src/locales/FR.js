@@ -19,7 +19,7 @@ export default {
           text: 'Actuellement #1 du classement WaveSpeed. Vidéo + audio générés conjointement en une seule passe : dialogue synchronisé, son ambiant, bruitages prêts à l’emploi.',
           tips: '🥇 Par défaut · #1 du classement · audio + lip-sync'
         },
-        hh_strip_title: 'Propulsé par HappyHorse 1.0.',
+        hh_strip_title: 'Propulsé par HappyHorse 1.1.',
         hh_strip_desc: '#1 du classement WaveSpeed. Dialogue + lip-sync natifs, 7 langues, 1080p en secondes.',
       title1: "HPVideo",
       title2: "Plateforme décentralisée de génération vidéo par IA sur la blockchain BNB",
@@ -216,17 +216,17 @@ export default {
         text2: "Développeur : Lightricks (entreprise israélienne spécialisée dans les outils créatifs IA)."
       },
       li5: {
-        title: "HAILUO 2.3",
+        title: "MiniMax H3",
         text1: "Date de sortie : 30 septembre 2025 (test fermé pour partenaires). L’API publique et la démo Web sont sorties le 10 novembre 2025.",
         text2: "Développeur : Minimax (start-up chinoise axée sur la génération multimodale et les solutions IA pour entreprises)."
       },
       li6: {
-        title: "SEEDANCE 2.0",
+        title: "Seedance 2.5",
         text1: "Date de sortie : 12 octobre 2025 (test interne écosystème ByteDance). L’API publique et l’intégration à TikTok Creator Studio ont été lancées le 20 novembre 2025.",
         text2: "Développeur : ByteDance AI Lab (division R&D IA d’une entreprise technologique mondiale)."
       },
       li7: {
-        title: "KLING V3.0",
+        title: "Kling O3",
         text1: "Date de sortie : 5 novembre 2025 (test public développeurs). L’API entreprise et les options d’auto-hébergement sont disponibles depuis le 22 novembre 2025.",
         text2: "Développeur : Kwaivgi (start-up IA basée à Singapour, dédiée à l’écosystème développeur global)."
       },
@@ -245,7 +245,7 @@ export default {
   models: {
 /* MODELS_HH_MARKER */
       modelHH: {
-        title: 'HappyHorse 1.0',
+        title: 'HappyHorse 1.1',
         text1: 'Actuellement #1 du classement de génération vidéo WaveSpeed (T2V Elo 1333, I2V 1392).',
         text2: 'Un Transformer unifié à 15 milliards de paramètres qui débruite ensemble les tokens vidéo et audio en une passe — pas de modèle audio séparé, pas de post-synchronisation.',
         text3_1: '🎙 Audio synchronisé natif : dialogue, son ambiant, bruitages',
@@ -298,9 +298,9 @@ export default {
       text4: "Sortie : vidéos 720p (30 fps), transitions fluides, couleurs optimisées pour les réseaux sociaux, avec segment audio court synchronisé."
     },
     model5: {
-      title: "HAILUO 2.3",
-      text1: "Date de sortie : 30 septembre 2025 (test fermé pour partenaires). API publique et démo Web disponibles depuis le 10 novembre 2025.",
-      text2: "Développeur : Minimax (start-up chinoise spécialisée dans la génération multimodale et les solutions IA pour entreprises).",
+      title: "MiniMax H3",
+      text1: "Date de sortie : 2026 (MiniMax H3 sur WaveSpeed — successeur de la gamme Hailuo). Génération plus rapide et moins coûteuse que Hailuo 2.3, avec des mouvements puissants et physiquement crédibles.",
+      text2: "Développeur : MiniMax (start-up d’IA basée en Chine ; créatrice des modèles vidéo Hailuo / MiniMax).",
       text3_1: "Points clés :",
       text3_2: "Génération de vidéos de 12 secondes à partir de texte, image ou combinaison des deux, avec adaptation renforcée au contexte linguistique et culturel chinois.",
       text3_3: "Architecture cloud-edge hybride (8 milliards de paramètres), avec temps d’inférence inférieur à 15 secondes par vidéo, support des templates personnalisés (marketing, formation, etc.).",
@@ -308,8 +308,8 @@ export default {
       text4: "Sortie : vidéos 1080p (24 fps), flou de mouvement de niveau cinéma, éclairage réaliste, BGM, voix off et sons d’ambiance synchronisés (formats MP4/WEBM)."
     },
     model6: {
-      title: "SEEDANCE 2.0",
-      text1: "Date de sortie : 12 octobre 2025 (test interne ByteDance). API REST publique et intégration à TikTok Creator Studio depuis le 20 novembre 2025.",
+      title: "Seedance 2.5",
+      text1: "Date de sortie : 2026 (Seedance 2.5 de ByteDance sur WaveSpeed). Vidéo cinématographique de niveau hollywoodien à partir de texte, avec synchronisation audio-vidéo native ; prise en charge du 480p au 4K et de clips jusqu’à 30 secondes.",
       text2: "Développeur : ByteDance AI Lab (division R&D IA d’un groupe technologique global).",
       text3_1: "Points clés :",
       text3_2: "Génération de vidéos courtes de 10 secondes à partir de prompts texte, optimisée pour les formats TikTok (défis de danse, démonstrations produits).",
@@ -319,8 +319,8 @@ export default {
       text4: "Sortie : vidéos 480p (30 fps, formats 9:16 et 16:9), mouvements fluides, couleurs optimisées TikTok, audio court (musique, voix, effets) synchronisé (formats MP4/AVC)."
     },
     model7: {
-      title: "KLING V3.0",
-      text1: "Date de sortie : 5 novembre 2025 (test public développeur). API entreprise et options d’auto-hébergement disponibles depuis le 22 novembre 2025.",
+      title: "Kling O3",
+      text1: "Date de sortie : 2026 (Kling O3 de Kuaishou sur WaveSpeed, successeur de la V3.0). Mouvements cinématographiques avec synchronisation audio optionnelle et forte fidélité au prompt — à un tarif à la seconde réduit.",
       text2: "Développeur : Kwaivgi (start-up IA basée à Singapour, axée sur la génération multimodale pour les développeurs).",
       text3_1: "Points clés :",
       text3_2: "Génération de vidéos de 14 secondes à partir de texte, image ou combinaison, avec prise en charge native de plus de 20 langues de prompts.",
@@ -455,7 +455,7 @@ export default {
     },
     qs5: {
       title: "5. Quels modèles IA sont pris en charge ?",
-      text: "HPVideo prend en charge WAN 2.7, LUMA RAY 2, OVI, VEO 3.1, LTX 2.3, KLING V3.0, PIXVERSE V6, SEEDANCE 2.0, HAILUO 2.3, VIDU Q3 et d'autres modèles."
+      text: "HPVideo prend en charge WAN 2.7, LUMA RAY 2, OVI, VEO 3.1, LTX 2.3, Kling O3, PIXVERSE V6, Seedance 2.5, MiniMax H3, VIDU Q3 et d'autres modèles."
     },
     qs6: {
       title: "6. Combien coûte la génération d’une vidéo ?",

@@ -19,11 +19,11 @@ export default {
           text: 'Currently #1 on the WaveSpeed leaderboard. Joint audio + video in a single pass: synced dialogue, ambient sound, and Foley out of the box.',
           tips: '🥇 Default · #1 leaderboard · audio + lip-sync'
         },
-        hh_strip_title: 'Now powered by HappyHorse 1.0.',
+        hh_strip_title: 'Now powered by HappyHorse 1.1.',
         hh_strip_desc: '#1 on the WaveSpeed leaderboard. Native dialogue + lip-sync, 7 languages, 1080p in seconds.',
       title1: "HPVideo",
       title2: "Cinematic AI video. Pay per clip. No subscription.",
-      title3: "11 frontier models including HappyHorse 1.0 (#1 leaderboard). From $0.45 per clip. Wallet sign-in, generate in seconds, download instantly. No email, no personal data, no monthly fee.",
+      title3: "11 frontier models including HappyHorse 1.1 (#1 leaderboard). From $0.45 per clip. Wallet sign-in, generate in seconds, download instantly. No email, no personal data, no monthly fee.",
       text1: "10X faster",
       text2: "the Cost",
       btn: "Generate Your First Video →",
@@ -216,17 +216,17 @@ export default {
         text2: "Developer: Lightricks (Israel-based AI creative tools company, known for Facetune/CapCut competitors)."
       },
       li5: {
-        title: "HAILUO 2.3",
+        title: "MiniMax H3",
         text1: "Release: September 30, 2025 (closed beta for enterprise partners); public API and web demo launched November 10, 2025 (no official 'Hailuo-03' roadmap as of now).",
         text2: "Developer: Minimax (China-based AI startup, specializing in multimodal generation and enterprise AI solutions)."
       },
       li6: {
-        title: "SEEDANCE 2.0",
+        title: "Seedance 2.5",
         text1: "Release: October 12, 2025 (internal beta for ByteDance ecosystem apps); public REST API and TikTok Creator Studio integration launched November 20, 2025 (no 'V2' official announcement as of now).",
         text2: "Developer: ByteDance AI Lab (China-based global tech company’s R&D division, specializing in multimodal generation and short-form content tools)."
       },
       li7: {
-        title: "KLING V3.0",
+        title: "Kling O3",
         text1: "Release: November 5, 2025 (public beta for developers); enterprise API access and self-hosted deployment options launched November 22, 2025 (no 'V3.0' official roadmap as of now).",
         text2: "Developer: Kwaivgi (Singapore-based AI startup, focused on lightweight multimodal generation for global developer ecosystems)."
       },
@@ -245,7 +245,7 @@ export default {
   models: {
 /* MODELS_HH_MARKER */
       modelHH: {
-        title: 'HappyHorse 1.0',
+        title: 'HappyHorse 1.1',
         text1: 'Currently #1 on the WaveSpeed video generation leaderboard (T2V Elo 1333, I2V 1392).',
         text2: 'A 15B-parameter unified Transformer that joint-denoises video and audio tokens in a single pass — no separate audio model, no post-production dubbing.',
         text3_1: '🎙 Native synchronized audio: dialogue, ambient sound, Foley effects',
@@ -298,9 +298,9 @@ export default {
       text4: "Output: 720p video (30fps) with smooth motion transitions, social-media-ready color grading, and synchronized short-form audio clips."
     },
     model5: {
-      title: "HAILUO 2.3",
-      text1: "Release: September 30, 2025 (closed beta for enterprise partners); public API and web demo launched November 10, 2025 (no official 'Hailuo-03' roadmap as of now).",
-      text2: "Developer: Minimax (China-based AI startup, specializing in multimodal generation and enterprise AI solutions).",
+      title: "MiniMax H3",
+      text1: "Release: 2026 (MiniMax H3 on WaveSpeed — the successor to the Hailuo line). Faster generation and lower cost than Hailuo 2.3, with strong, physically-grounded motion.",
+      text2: "Developer: MiniMax (China-based AI startup; makers of the Hailuo / MiniMax video models).",
       text3_1: "Features:",
       text3_2: "Generates 12-second, high-coherence videos from text, images, or text-image hybrid prompts, with enhanced cultural context adaptation for Chinese scenarios.",
       text3_3: "Adopts a hybrid cloud-edge architecture (8B parameters) for fast inference (<15s per video) and supports custom template imports (e.g., marketing clips, educational content).",
@@ -308,8 +308,8 @@ export default {
       text4: "Output: 1080p video (24fps) with cinematic motion blur, realistic lighting effects, and synchronized audio (background music, voiceovers, ambient sounds); supports MP4/WEBM formats for cross-platform compatibility."
     },
     model6: {
-      title: "SEEDANCE 2.0",
-      text1: "Release: October 12, 2025 (internal beta for ByteDance ecosystem apps); public REST API and TikTok Creator Studio integration launched November 20, 2025 (no 'V2' official announcement as of now).",
+      title: "Seedance 2.5",
+      text1: "Release: 2026 (ByteDance's Seedance 2.5 on WaveSpeed). Hollywood-grade cinematic video from text with native audio-visual sync; supports 480p–4K and clips up to 30 seconds.",
       text2: "Developer: ByteDance AI Lab (China-based global tech company’s R&D division, specializing in multimodal generation and short-form content tools).",
       text3_1: "Features:",
       text3_2: "Generates 10-second, short-form optimized videos from text prompts (supports TikTok-style trend adaptation, e.g., dance challenges, product showcases).",
@@ -319,8 +319,8 @@ export default {
       text4: "Output: 480p video (30fps, 9:16/16:9 aspect ratios) with smooth motion, TikTok-optimized color grading, and synchronized short-form audio (licensed music library, voiceovers, trend sounds); supports MP4/AVC formats for social media compatibility."
     },
     model7: {
-      title: "KLING V3.0",
-      text1: "Release: November 5, 2025 (public beta for developers); enterprise API access and self-hosted deployment options launched November 22, 2025 (no 'V3.0' official roadmap as of now).",
+      title: "Kling O3",
+      text1: "Release: 2026 (Kuaishou's Kling O3 on WaveSpeed, successor to V3.0). Cinematic motion with optional audio sync and strong prompt adherence — at a low per-second rate.",
       text2: "Developer: Kwaivgi (Singapore-based AI startup, focused on lightweight multimodal generation for global developer ecosystems).",
       text3_1: "Features:",
       text3_2: "Generates 14-second, high-fidelity videos from text, image, or text-image hybrid prompts, with cross-cultural scene adaptation (supports 20+ language prompts natively).",
@@ -491,7 +491,7 @@ export default {
     },
     qs5: {
       title: "5. Which AI models does HPVideo support?",
-      text: 'HPVideo supports WAN 2.7, LUMA RAY 2, OVI, VEO 3.1, LTX 2.3, KLING V3.0, PIXVERSE V6, SEEDANCE 2.0, HAILUO 2.3, VIDU Q3 and others. Each model specializes in different visual styles and creative scenarios.'
+      text: 'HPVideo supports WAN 2.7, LUMA RAY 2, OVI, VEO 3.1, LTX 2.3, Kling O3, PIXVERSE V6, Seedance 2.5, MiniMax H3, VIDU Q3 and others. Each model specializes in different visual styles and creative scenarios.'
     },
     qs6: {
       title: "6. How much does it cost to generate a video?",

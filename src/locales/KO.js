@@ -19,7 +19,7 @@ export default {
           text: 'WaveSpeed 비디오 생성 리더보드 #1. 단일 패스로 비디오 + 오디오 동시 생성 — 동기화된 대화, 환경음, Foley 효과 기본 제공.',
           tips: '🥇 기본 · 리더보드 #1 · 오디오+립싱크'
         },
-        hh_strip_title: 'HappyHorse 1.0 탑재.',
+        hh_strip_title: 'HappyHorse 1.1 탑재.',
         hh_strip_desc: 'WaveSpeed 리더보드 #1. 네이티브 대화 + 립싱크, 7개 언어, 몇 초 만에 1080p.',
       title1: "HPVideo",
       title2: "BNB 체인 기반 탈중앙화 AI 비디오 제작 플랫폼",
@@ -216,18 +216,18 @@ export default {
         text2: "개발사: Lightricks (이스라엘 기반 AI 크리에이티브 툴 기업, Facetune/CapCut 경쟁사로 유명)."
       },
       li5: {
-        title: "HAILUO 2.3",
-        text1: "출시일: 2025년 9월 30일 (기업 파트너 대상 클로즈드 베타); 공개 API 및 웹 데모는 2025년 11월 10일에 출시되었습니다 (현재 ‘Hailuo-03’ 공식 로드맵 없음).",
-        text2: "개발사: Minimax (중국 기반 AI 스타트업, 멀티모달 생성 및 엔터프라이즈 AI 솔루션 전문)."
+        title: "MiniMax H3",
+        text1: "출시일: 2026년 (WaveSpeed의 MiniMax H3 — Hailuo 라인의 후속작). Hailuo 2.3보다 생성 속도가 빠르고 비용이 낮으며, 물리 법칙에 충실한 강력한 모션을 제공합니다.",
+        text2: "개발사: MiniMax (중국 기반 AI 스타트업, Hailuo / MiniMax 비디오 모델 제작사)."
       },
       li6: {
-        title: "SEEDANCE 2.0",
-        text1: "출시일: 2025년 10월 12일 (ByteDance 생태계 내부 베타); 공개 REST API 및 TikTok Creator Studio 통합은 2025년 11월 20일에 출시되었습니다 (‘V2’ 공식 발표 없음).",
+        title: "Seedance 2.5",
+        text1: "출시일: 2026년 (WaveSpeed의 ByteDance Seedance 2.5). 텍스트만으로 네이티브 오디오-비주얼 동기화를 갖춘 할리우드급 시네마틱 영상을 생성하며, 480p–4K 해상도와 최대 30초 길이의 클립을 지원합니다.",
         text2: "개발사: ByteDance AI Lab (중국 기반 글로벌 기술 기업의 R&D 부문, 멀티모달 생성 및 숏폼 콘텐츠 툴 전문)."
       },
       li7: {
-        title: "KLING V3.0",
-        text1: "출시일: 2025년 11월 5일 (개발자 대상 공개 베타); 기업용 API 및 자체 호스팅 배포 옵션은 2025년 11월 22일에 출시되었습니다 (‘V3.0’ 공식 로드맵 없음).",
+        title: "Kling O3",
+        text1: "출시일: 2026년 (WaveSpeed의 Kuaishou Kling O3, V3.0의 후속작). 선택형 오디오 동기화와 뛰어난 프롬프트 반영력을 갖춘 시네마틱 모션을 낮은 초당 단가로 제공합니다.",
         text2: "개발사: Kwaivgi (싱가포르 기반 AI 스타트업, 글로벌 개발자 생태계를 위한 경량 멀티모달 생성 전문)."
       },
       li8: {
@@ -245,7 +245,7 @@ export default {
   models: {
 /* MODELS_HH_MARKER */
       modelHH: {
-        title: 'HappyHorse 1.0',
+        title: 'HappyHorse 1.1',
         text1: 'WaveSpeed 비디오 생성 리더보드 현재 #1 (T2V Elo 1333, I2V 1392).',
         text2: '15B 파라미터 통합 Transformer가 비디오와 오디오 토큰을 단일 패스에서 함께 디노이징 — 별도 오디오 모델도, 후반 더빙도 불필요.',
         text3_1: '🎙 네이티브 동기화 오디오: 대화, 환경음, Foley 효과',
@@ -298,8 +298,8 @@ export default {
       text4: "출력: 720p (30fps) SNS 최적화 영상, 색상 대비 강조, 짧은 오디오 자동 포함."
     },
     model5: {
-      title: "HAILUO 2.3",
-      text1: "출시일: 2025년 9월 30일 (파트너 대상 클로즈드 테스트); 11월 10일 API 및 웹 데모 공개.",
+      title: "MiniMax H3",
+      text1: "출시일: 2026년 (WaveSpeed의 MiniMax H3 — Hailuo 라인의 후속작). Hailuo 2.3보다 생성 속도가 빠르고 비용이 낮으며, 물리 법칙에 충실한 강력한 모션을 제공합니다.",
       text2: "개발사: Minimax (중국 AI 스타트업, 멀티모달 및 기업용 솔루션 전문).",
       text3_1: "주요 기능:",
       text3_2: "텍스트, 이미지 또는 혼합 입력으로 12초 고일관성 비디오 생성, 중국어 및 지역 문화 맥락 최적화.",
@@ -308,8 +308,8 @@ export default {
       text4: "출력: 1080p (24fps), 영화 수준 모션 블러 및 조명 효과, 배경음악·보이스오버 동기화 지원."
     },
     model6: {
-      title: "SEEDANCE 2.0",
-      text1: "출시일: 2025년 10월 12일 (바이트댄스 생태계 내부 테스트); 11월 20일 TikTok Creator Studio 통합 API 공개.",
+      title: "Seedance 2.5",
+      text1: "출시일: 2026년 (WaveSpeed의 ByteDance Seedance 2.5). 텍스트만으로 네이티브 오디오-비주얼 동기화를 갖춘 할리우드급 시네마틱 영상을 생성하며, 480p–4K 해상도와 최대 30초 길이의 클립을 지원합니다.",
       text2: "개발사: ByteDance AI Lab (글로벌 멀티모달 연구 조직).",
       text3_1: "주요 기능:",
       text3_2: "텍스트 기반 10초 짧은 영상 생성, TikTok 트렌드(댄스, 제품 홍보 등)에 최적화.",
@@ -319,8 +319,8 @@ export default {
       text4: "출력: 480p (30fps, 9:16/16:9 지원), TikTok 색감 최적화, 인기 사운드·음악 포함."
     },
     model7: {
-      title: "KLING V3.0",
-      text1: "출시일: 2025년 11월 5일 (개발자 공개 테스트); 11월 22일 기업용 API 및 자가 호스팅 지원.",
+      title: "Kling O3",
+      text1: "출시일: 2026년 (WaveSpeed의 Kuaishou Kling O3, V3.0의 후속작). 선택형 오디오 동기화와 뛰어난 프롬프트 반영력을 갖춘 시네마틱 모션을 낮은 초당 단가로 제공합니다.",
       text2: "개발사: Kwaivgi (싱가포르 기반 AI 스타트업).",
       text3_1: "주요 기능:",
       text3_2: "텍스트·이미지·혼합 입력으로 14초 고해상도 영상 생성, 20개 이상 언어 프롬프트 지원.",
@@ -455,7 +455,7 @@ export default {
     },
     qs5: {
       title: "5. HPVideo는 어떤 AI 모델을 지원하나요?",
-      text: "WAN 2.7, LUMA RAY 2, OVI, VEO 3.1, LTX 2.3, KLING V3.0, PIXVERSE V6, SEEDANCE 2.0, HAILUO 2.3, VIDU Q3 등 다양한 모델을 지원하며, 각 모델은 특정 비주얼 스타일과 용도에 특화되어 있습니다."
+      text: "WAN 2.7, LUMA RAY 2, OVI, VEO 3.1, LTX 2.3, Kling O3, PIXVERSE V6, Seedance 2.5, MiniMax H3, VIDU Q3 등 다양한 모델을 지원하며, 각 모델은 특정 비주얼 스타일과 용도에 특화되어 있습니다."
     },
     qs6: {
       title: "6. 영상 생성 비용은 얼마인가요?",
