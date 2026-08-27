@@ -196,7 +196,7 @@ export default {
       title: "HPVideos Supported models",
       learn_more: "Learn more",
       li1: {
-        title: "Wan 2.7",
+        title: "Wan 3.0",
         text1: "Release: September 24, 2025 (preview version); the 'WAN 2.5 official version' has opened API access and public experience (no official preview for subsequent versions).",
         text2: "Developer: Alibaba (China) Tongyi Lab (AI R&D institution under Alibaba Cloud Intelligence Group)."
       },
@@ -258,8 +258,8 @@ export default {
     text1: "Pick the model that fits your shot. Pay only for the generation. Switch models per clip with no extra accounts. Cheapest model from $0.45, photoreal up to $1.50, agency-grade up to $9.60 per video — all priced live in Studio before you generate.",
     text2: "Below: each model's strengths, sample prompts, and the kind of output it's best at. All run on the same Studio with the same credits.",
     model1: {
-      title: "Wan 2.7",
-      text1: "Release: September 24, 2025 (preview version); the 'WAN 2.5 official version' has opened API access and public experience (no official preview for subsequent versions).",
+      title: "Wan 3.0",
+      text1: "Release: 2026 (Alibaba's Wan 3.0 on WaveSpeed — the successor to Wan 2.7, now with native text-to-video). Generates clips up to 30 seconds from text with aspect-ratio control and optional audio, at a lower per-second cost than 2.7.",
       text2: "Developer: Alibaba (China) Tongyi Lab (AI R&D institution under Alibaba Cloud Intelligence Group).",
       text3_1: "Features:",
       text3_2: "Generates audio-synced videos (including voice, sound effects, background music) from text/images, with duration extended to 10 seconds.",
@@ -491,7 +491,7 @@ export default {
     },
     qs5: {
       title: "5. Which AI models does HPVideo support?",
-      text: 'HPVideo supports WAN 2.7, LUMA RAY 2, OVI, VEO 3.1, LTX 2.3, Kling O3, PIXVERSE V6, Seedance 2.5, MiniMax H3, VIDU Q3 and others. Each model specializes in different visual styles and creative scenarios.'
+      text: 'HPVideo supports WAN 3.0, LUMA RAY 2, OVI, VEO 3.1, LTX 2.3, Kling O3, PIXVERSE V6, Seedance 2.5, MiniMax H3, VIDU Q3 and others. Each model specializes in different visual styles and creative scenarios.'
     },
     qs6: {
       title: "6. How much does it cost to generate a video?",

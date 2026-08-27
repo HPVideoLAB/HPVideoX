@@ -142,7 +142,7 @@ export default defineComponent({
         badge: 'Starter',
         featured: false,
         features: [
-          'About 3 WAN 2.7 720p clips',
+          'About 5 WAN 3.0 720p clips',
           'About 6 Kling O3 5s clips',
           'No expiry',
         ],
@@ -154,8 +154,8 @@ export default defineComponent({
         badge: 'Most Popular',
         featured: true,
         features: [
-          '13 WAN 2.7 720p / 5s clips',
-          '4 WAN 2.7 1080p / 10s clips',
+          '20 WAN 3.0 720p / 5s clips',
+          '5 WAN 3.0 1080p / 10s clips',
           '2 Veo 3.1 8s clips',
           'No expiry',
         ],
@@ -167,7 +167,7 @@ export default defineComponent({
         badge: 'Best Value',
         featured: false,
         features: [
-          '33 WAN 2.7 720p / 5s clips',
+          '50 WAN 3.0 720p / 5s clips',
           '5 Veo 3.1 8s clips',
           'Or 59 Kling O3 5s clips',
           'No expiry',
@@ -179,14 +179,14 @@ export default defineComponent({
       { id: 'ovi', name: 'OVI', note: 'Lifelike characters, fast', duration: '5s', resolution: 'std', price: 0.45, credits: 450 },
       { id: 'vidu', name: 'Vidu Q3', note: 'Fast, consistent characters', duration: '4s', resolution: 'std', price: 0.80, credits: 800 },
       { id: 'kling', name: 'Kling O3', note: 'Cinematic · great value', duration: '5s', resolution: 'std', price: 0.84, credits: 840, best: true },
+      { id: 'wan-720', name: 'WAN 3.0', note: 'Photoreal · up to 30s', duration: '5s', resolution: '720p', price: 1.00, credits: 1000 },
       { id: 'ltx', name: 'LTX 2.3', note: 'Fast social-media clips', duration: '6s', resolution: 'std', price: 1.08, credits: 1080 },
       { id: 'pixverse', name: 'Pixverse V6', note: 'Stylised animation', duration: '5s', resolution: 'std', price: 1.20, credits: 1200 },
       { id: 'hailuo', name: 'MiniMax H3', note: 'Strong motion', duration: '6s', resolution: '768p', price: 1.20, credits: 1200 },
       { id: 'happyhorse', name: 'HappyHorse 1.1', note: '🥇 #1 · native audio + lip-sync', duration: '5s', resolution: '720p', price: 1.40, credits: 1400 },
       { id: 'luma', name: 'Luma Ray 2', note: 'Cinematic motion', duration: '5s', resolution: 'std', price: 1.50, credits: 1500 },
-      { id: 'wan-720', name: 'WAN 2.7', note: 'Photoreal, frontier-tier', duration: '5s', resolution: '720p', price: 1.50, credits: 1500 },
+      { id: 'wan-1080', name: 'WAN 3.0', note: 'Photoreal, longer + sharper', duration: '10s', resolution: '1080p', price: 4.00, credits: 4000 },
       { id: 'seedance', name: 'Seedance 2.5', note: 'Cinematic, native audio', duration: '6s', resolution: '720p', price: 4.32, credits: 4320 },
-      { id: 'wan-1080', name: 'WAN 2.7', note: 'Photoreal, longer + sharper', duration: '10s', resolution: '1080p', price: 4.50, credits: 4500 },
       { id: 'veo', name: 'Veo 3.1', note: "Google's flagship, dialogue-aware", duration: '8s', resolution: 'std', price: 9.60, credits: 9600 },
     ];
 

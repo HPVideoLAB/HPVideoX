@@ -196,7 +196,7 @@ export default {
       title: "Modèles pris en charge par HPVideo",
       learn_more: "En savoir plus",
       li1: {
-        title: "Wan 2.7",
+        title: "Wan 3.0",
         text1: "Date de sortie : 24 septembre 2025 (aperçu). La version « WAN 2.5 » est disponible en API et accès public.",
         text2: "Développeur : Alibaba Tongyi Lab (laboratoire d’IA d’Alibaba Cloud)."
       },
@@ -258,8 +258,8 @@ export default {
     text1: "HPVideo est une plateforme pionnière de génération vidéo IA décentralisée, qui s’appuie sur un réseau distribué pour offrir une puissance de création fiable et efficace. Les utilisateurs peuvent transformer des prompts texte en images animées de haute qualité, construites image par image.",
     text2: "HPVideo vise également à créer un environnement de co-création ouvert, connectant la communauté mondiale afin de bâtir ensemble des histoires innovantes et des récits partagés.",
     model1: {
-      title: "Wan 2.7",
-      text1: "Date de sortie : 24 septembre 2025 (aperçu). La version « WAN 2.5 » est disponible en API et accès public.",
+      title: "Wan 3.0",
+      text1: "Sortie : 2026 (Wan 3.0 d’Alibaba sur WaveSpeed — le successeur de Wan 2.7, désormais avec génération native texte-vers-vidéo). Génère des clips jusqu’à 30 secondes à partir de texte, avec contrôle du rapport d’aspect et audio optionnel, à un coût par seconde inférieur à celui de la 2.7.",
       text2: "Développeur : Alibaba Tongyi Lab (laboratoire d’IA d’Alibaba Cloud).",
       text3_1: "Points clés :",
       text3_2: "Génération de vidéos avec son (voix, effets, musique) à partir de texte ou d’image, jusqu’à 10 secondes.",
@@ -455,7 +455,7 @@ export default {
     },
     qs5: {
       title: "5. Quels modèles IA sont pris en charge ?",
-      text: "HPVideo prend en charge WAN 2.7, LUMA RAY 2, OVI, VEO 3.1, LTX 2.3, Kling O3, PIXVERSE V6, Seedance 2.5, MiniMax H3, VIDU Q3 et d'autres modèles."
+      text: "HPVideo prend en charge WAN 3.0, LUMA RAY 2, OVI, VEO 3.1, LTX 2.3, Kling O3, PIXVERSE V6, Seedance 2.5, MiniMax H3, VIDU Q3 et d'autres modèles."
     },
     qs6: {
       title: "6. Combien coûte la génération d’une vidéo ?",

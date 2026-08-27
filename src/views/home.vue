@@ -417,7 +417,7 @@
         
         {
           video: 'https://www.youtube.com/embed/kDBdqhn6vXg?si=lK3rxUVF76gOK4Jt',
-          title: "WAN 2.7",
+          title: "WAN 3.0",
           desc: t('home.cont1.model6.text'),
           tips: t('home.cont1.model6.tips')
         },
@@ -1047,7 +1047,7 @@
           
           {
             video: 'https://www.youtube.com/embed/kDBdqhn6vXg?si=lK3rxUVF76gOK4Jt',
-            title: "WAN 2.7",
+            title: "WAN 3.0",
             desc: t('home.cont1.model6.text'),
             tips: t('home.cont1.model6.tips')
           },

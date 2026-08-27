@@ -196,7 +196,7 @@ export default {
       title: "HPVideos 対応モデル",
       learn_more: "詳細はこちら",
       li1: {
-        title: "Wan 2.7",
+        title: "Wan 3.0",
         text1: "リリース: 2025年9月24日（プレビュー版）; 「WAN 2.5 正式版」では API アクセスと一般公開が開始されました（後続バージョンの公式プレビューはありません）。",
         text2: "開発元: Alibaba (中国) Tongyi Lab (Alibaba Cloud Intelligence Group 傘下の AI 研究開発機関)。"
       },
@@ -258,8 +258,8 @@ export default {
     text1: "HPVideoは、分散ネットワーク上で動作する分散型AIビデオ生成プラットフォームです。テキストプロンプトを入力するだけで、フレーム単位で構築された高品質な映像を生成できます。生成プロセスはタイムスタンプで検証され、すべての作品の所有権が明確に保証されます。",
     text2: "さらにHPVideoは、世界中のクリエイターをつなぐオープンな共同制作環境を提供し、共有された物語を通して新しい創作文化を築いていきます。",
     model1: {
-      title: "Wan 2.7",
-      text1: "リリース日：2025年9月24日（プレビュー版）。WAN 2.5正式版はAPIおよび一般公開済みです。",
+      title: "Wan 3.0",
+      text1: "リリース：2026年（WaveSpeed 上の Alibaba の Wan 3.0 ― Wan 2.7 の後継で、ネイティブなテキストから動画生成に対応）。テキストから最長30秒のクリップを生成でき、アスペクト比の指定と任意の音声付与に対応。1秒あたりのコストは 2.7 より低くなっています。",
       text2: "開発元：Alibaba Tongyi Lab（アリババクラウド傘下のAI研究所）。",
       text3_1: "機能概要：",
       text3_2: "テキストまたは画像から音声付きの映像を生成（音声・効果音・BGM対応）、最長10秒まで。",
@@ -455,7 +455,7 @@ export default {
     },
     qs5: {
       title: "5. どのAIモデルを利用できますか？",
-      text: "WAN 2.7、LUMA RAY 2、OVI、VEO 3.1、LTX 2.3、Kling O3、PIXVERSE V6、Seedance 2.5、MiniMax H3、VIDU Q3 などをサポートしています。"
+      text: "WAN 3.0、LUMA RAY 2、OVI、VEO 3.1、LTX 2.3、Kling O3、PIXVERSE V6、Seedance 2.5、MiniMax H3、VIDU Q3 などをサポートしています。"
     },
     qs6: {
       title: "6. 動画生成のコストは？",

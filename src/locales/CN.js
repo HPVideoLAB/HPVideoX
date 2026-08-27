@@ -196,7 +196,7 @@ export default {
       title: "HPVideo 支持的模型",
       learn_more: "了解更多",
       li1: {
-        title: "Wan 2.7",
+        title: "Wan 3.0",
         text1: "发布日期：2025 年 9 月 24 日（预览版）；“WAN 2.5 正式版”已开放 API 接入和公众体验（后续版本暂无官方预览）。",
         text2: "开发方：阿里巴巴通义实验室（隶属阿里云智能集团的 AI 研发机构）。"
       },
@@ -258,8 +258,8 @@ export default {
     text1: "HPVideo 是一个开创性的去中心化 AI 视频生成平台，利用分布式网络提供强大、可信且高效的创作能力。用户可以轻松将文本提示转换为逐帧构建的高质量动态图像。平台通过时间戳验证和透明流程来保护你的创意，确保创作真正属于你。",
     text2: "同时，HPVideo 也致力于打造开放的共创环境，把全球社区连接在一起，在共享叙事的基础上共建创新故事，重新定义协作式数字内容创作。",
     model1: {
-      title: "Wan 2.7",
-      text1: "发布日期：2025 年 9 月 24 日（预览版）；“WAN 2.5 正式版”已开放 API 接入和公众体验（后续版本暂无官方预览）。",
+      title: "Wan 3.0",
+      text1: "发布日期：2026 年（阿里巴巴 Wan 3.0，运行于 WaveSpeed —— Wan 2.7 的继任者，现已原生支持文生视频）。可根据文本生成时长最长达 30 秒的视频，支持画幅比例控制和可选音频，且每秒生成成本低于 2.7。",
       text2: "开发方：阿里巴巴通义实验室（隶属阿里云智能集团的 AI 研发机构）。",
       text3_1: "功能特性：",
       text3_2: "从文本或图像生成带声音的视频（包含人声、音效、背景音乐），视频时长可延长至 10 秒。",
@@ -455,7 +455,7 @@ export default {
     },
     qs5: {
       title: "5. HPVideo 支持哪些 AI 模型？",
-      text: 'HPVideo 支持 WAN 2.7、LUMA RAY 2、OVI、VEO 3.1、LTX 2.3、Kling O3、PIXVERSE V6、Seedance 2.5、MiniMax H3、VIDU Q3 等多种模型。每个模型都擅长不同的视觉风格和创作场景。'
+      text: 'HPVideo 支持 WAN 3.0、LUMA RAY 2、OVI、VEO 3.1、LTX 2.3、Kling O3、PIXVERSE V6、Seedance 2.5、MiniMax H3、VIDU Q3 等多种模型。每个模型都擅长不同的视觉风格和创作场景。'
     },
     qs6: {
       title: "6. 生成一段视频需要多少钱？",
