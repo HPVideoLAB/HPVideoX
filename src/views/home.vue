@@ -81,7 +81,7 @@
           <div class="stat-label">Frontier Video Models</div>
         </div>
         <div class="stat">
-          <div class="stat-num">$0.45</div>
+          <div class="stat-num">$0.25</div>
           <div class="stat-label">Starting Price / Clip</div>
         </div>
         <div class="stat">

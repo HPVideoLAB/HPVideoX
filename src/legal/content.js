@@ -246,14 +246,14 @@ export const LEGAL_CONTENT = {
       {
         heading: 'Approximate cost per video',
         bullets: [
-          'OVI 5s → 450 credits ($0.45)',
-          'Seedance 6s → 600 credits ($0.60)',
-          'Hailuo 6s → 690 credits ($0.69)',
-          'WAN 3.0 720p / 5s → 1,000 credits ($1.00)',
-          'Pixverse V6 5s → 1,200 credits ($1.20)',
-          'WAN 3.0 1080p / 10s → 4,000 credits ($4.00)',
-          'Veo 3.1 8s → 9,600 credits ($9.60)',
-          'Kling 3.0 10s → 8,400 credits ($8.40)',
+          'OVI 5s → 248 credits ($0.25)',
+          'WAN 3.0 720p / 5s → 550 credits ($0.55)',
+          'Hailuo / MiniMax H3 6s → 660 credits ($0.66)',
+          'Pixverse V6 5s → 660 credits ($0.66)',
+          'Kling O3 10s → 920 credits ($0.92)',
+          'WAN 3.0 1080p / 10s → 2,200 credits ($2.20)',
+          'Seedance 2.5 6s → 2,376 credits ($2.38)',
+          'Veo 3.1 8s → 5,280 credits ($5.28)',
         ],
         paragraphs: [
           'Costs are recomputed live as you change duration, resolution, or model in Studio. There are no hidden fees.',

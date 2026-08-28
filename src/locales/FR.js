@@ -357,7 +357,7 @@ export default {
       text3_1: "Points clés :",
       text3_2: "Génère des vidéos de 4 à 8 secondes à partir de prompts texte ou image, avec un rendu rapide et un fort respect du prompt.",
       text3_3: "Spécialisé dans un mouvement fluide et physiquement plausible et une identité de personnage cohérente tout au long d’un plan, avec un registre stylisé/anime en plus du rendu photoréaliste.",
-      text3_4: "Palier économique (0,40 $ pour 4 s, 0,80 $ pour 8 s) — un excellent choix par défaut pour l’idéation rapide, les ébauches de storyboard et les séquences multi-plans.",
+      text3_4: "Palier économique (0,44 $ pour 4 s, 0,88 $ pour 8 s) — un excellent choix par défaut pour l’idéation rapide, les ébauches de storyboard et les séquences multi-plans.",
       text4: "Sortie : vidéo à forte cohérence jusqu’à 1080p avec une identité de sujet fiable, parfaitement adaptée aux courts métrages centrés sur les personnages et à l’animation."
     }
   },

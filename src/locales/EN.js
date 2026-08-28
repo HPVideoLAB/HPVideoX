@@ -23,7 +23,7 @@ export default {
         hh_strip_desc: '#1 on the WaveSpeed leaderboard. Native dialogue + lip-sync, 7 languages, 1080p in seconds.',
       title1: "HPVideo",
       title2: "Cinematic AI video. Pay per clip. No subscription.",
-      title3: "11 frontier models including HappyHorse 1.1 (#1 leaderboard). From $0.45 per clip. Wallet sign-in, generate in seconds, download instantly. No email, no personal data, no monthly fee.",
+      title3: "11 frontier models including HappyHorse 1.1 (#1 leaderboard). From $0.25 per clip. Wallet sign-in, generate in seconds, download instantly. No email, no personal data, no monthly fee.",
       text1: "10X faster",
       text2: "the Cost",
       btn: "Generate Your First Video →",
@@ -255,7 +255,7 @@ export default {
         text4: 'Best for narrative dialogue scenes, talking-head content, multi-language commercials, and any video that needs voice + lip-sync without an extra pipeline.'
       },
     title: "11 frontier video models, one wallet, one credit balance",
-    text1: "Pick the model that fits your shot. Pay only for the generation. Switch models per clip with no extra accounts. Cheapest model from $0.45, photoreal up to $1.50, agency-grade up to $9.60 per video — all priced live in Studio before you generate.",
+    text1: "Pick the model that fits your shot. Pay only for the generation. Switch models per clip with no extra accounts. Cheapest model from $0.25, photoreal up to $0.83, agency-grade up to $5.28 per video — all priced live in Studio before you generate.",
     text2: "Below: each model's strengths, sample prompts, and the kind of output it's best at. All run on the same Studio with the same credits.",
     model1: {
       title: "Wan 3.0",
@@ -357,7 +357,7 @@ export default {
       text3_1: "Features:",
       text3_2: "Generates 4- to 8-second videos from text or image prompts with fast turnaround and strong prompt adherence.",
       text3_3: "Specialises in smooth, physically-plausible motion and consistent character identity across a shot, with a distinctive stylised/anime range alongside photoreal output.",
-      text3_4: "Cost-efficient tier ($0.40 for 4s, $0.80 for 8s) — a strong default for rapid ideation, storyboard drafts, and multi-shot sequences.",
+      text3_4: "Cost-efficient tier ($0.44 for 4s, $0.88 for 8s) — a strong default for rapid ideation, storyboard drafts, and multi-shot sequences.",
       text4: "Output: high-consistency video up to 1080p with reliable subject identity, well-suited to character-driven shorts and animation."
     },
     // model10: {
